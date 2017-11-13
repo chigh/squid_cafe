@@ -22,17 +22,21 @@ Blocked instances
 | unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone\*\* |
 | pawoo.net | suspended | lolicon\*\*\* |
 | wrongthink.net | silenced | GNUSocial apparent free speech zone\*\* |
-| porntoot.com | suspended | Unflagged porn |
+| porntoot.com | silenced | Unflagged porn |
 | ediot.social | silenced | Apparent free speech zone\*\* |
 | admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline |
 | social.targaryen.house | silenced | Apparent free speech zone\*\* |
 | noagendasocial.com | silenced | Apparent free speech zone\*\* |
+| antitwitter.moe | silenced | Advice of octodon.social admin\*\*\*\* |
+| npf.mlpol.net | silenced | Advice of octodon.social admin\*\*\*\* |
+| toot.love | silenced | Advice of octodon.social admin\*\*\*\* |
 
 ### Footnotes
 
 - \* Silenced vs suspended: silenced means they don't appear in the Federated timeline, but if someone discovers the accounts somehow (e.g. via replying to another toot) then they can follow and it will appear in their Home view.
 - \*\* "Free speech zone": a place where it's okay to promote e.g. National Socialism because the argument is that open discussion is more important than people's sensitivities or the denazification laws of Germany/France/etc. The term is not meant in a derogatory way; if there's a better one, let me know.
 - \*\*\* lolicon: sexualized depictions of children
+- \*\*\*\* Allows harassment
 
 Notes on our instance
 -----
