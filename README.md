@@ -8,7 +8,7 @@ The purpose of this is to be transparent and to collaborate with other admins on
 Blocked instances
 -------
 
-| Instance | Status\* | Reason |
+| Instance | Status&#9312; | Reason |
 | ---- | ---- | ---- |
 | rainbowdash.net | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
 | shitposter.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
