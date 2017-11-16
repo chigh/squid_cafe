@@ -10,26 +10,29 @@ Blocked instances
 
 | Instance | Status&#9312; | Reason |
 | ---- | ---- | ---- |
-| rainbowdash.net | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
-| shitposter.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
-| freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
-| social.heldscal.la | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
-| woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
-| social.au2pb.net | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
-| gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
-| sealion.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
-| gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313;, lolicon&#9314; |
-| unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
-| pawoo.net | suspended | lolicon&#9314; |
-| wrongthink.net | silenced | GNUSocial apparent free speech zone&#9313; |
-| porntoot.com | silenced | Unflagged porn |
-| ediot.social | silenced | Apparent free speech zone&#9313; |
 | admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline |
-| social.targaryen.house | silenced | Apparent free speech zone&#9313; |
-| noagendasocial.com | silenced | Apparent free speech zone&#9313; |
 | antitwitter.moe | silenced | Advice of octodon.social admin&#9315; |
+| ediot.social | silenced | Apparent free speech zone&#9313; |
+| freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
+| gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
+| noagendasocial.com | silenced | Apparent free speech zone&#9313; |
 | npf.mlpol.net | silenced | Advice of octodon.social admin&#9315; |
+| porntoot.com | silenced | Unflagged porn |
+| rainbowdash.net | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
+| sealion.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
+| shitposter.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
+| social.au2pb.net | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
+| social.heldscal.la | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
 | toot.love | silenced | Advice of octodon.social admin&#9315; |
+| unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
+| woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
+| wrongthink.net | silenced | GNUSocial apparent free speech zone&#9313; |
+| pawoo.net | suspended | lolicon&#9314; |
+| gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313;, lolicon&#9314; |
+
+<!--
+| social.targaryen.house | silenced | Apparent free speech zone&#9313; |
+-->
 
 ### Footnotes
 
