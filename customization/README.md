@@ -4,3 +4,8 @@ targaryen.sh makes a few customizations.
 * Changes a dragon emoji.
 
 For my purposes, I have only changed the bio size from 160 to 300 chars.
+
+Originally obtained from: 
+* @queen@social.targaryen.house
+    * https://github.com/Wonderfall/dockerfiles/
+        * https://github.com/Wonderfall/dockerfiles/blob/master/mastodon/targaryen/targaryen.sh
