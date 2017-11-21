@@ -12,7 +12,7 @@ Blocked instances
 | ---- | ---- | ---- |
 | admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline |
 | antitwitter.moe | silenced | Advice of octodon.social admin&#9315; |
-| ediot.social | silenced | Apparent free speech zone&#9313; |
+| ediot.social | silenced | Encyclopedia Dramatica. Apparent free speech zone&#9313; |
 | freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone&#9313; |
 | gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
 | noagendasocial.com | silenced | Apparent free speech zone&#9313; |
