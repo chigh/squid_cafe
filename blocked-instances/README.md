@@ -27,7 +27,7 @@ Blocked instances
 | unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
 | woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313; |
 | wrongthink.net | silenced | GNUSocial apparent free speech zone&#9313; |
-| --- | --- | --- | 
+| &mdash; | &mdash; | &mdash; | 
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313;, lolicon&#9314; |
 | pawoo.net | suspended | lolicon&#9314; |
 | preteengirls.biz | suspended | Pedophilia | 
