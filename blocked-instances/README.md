@@ -3,7 +3,7 @@ List of Squid Café blocked instances
 
 This is a list of Mastodon/GNU Social instances blocked by [squid.cafe](https://squid.cafe). If you think an instance has been unfairly blocked, please open an issue and/or a pull request.
 
-The purpose of this is to be transparent and to collaborate with other admins on identifying those instances that violate the commonly-accepted Code of Conduct in the Mastodon community based on [the example set by mastodon.social](https://mastodon.social/about/more), or those that tend to contain bad actors who do, and who boost unwanted content into other instances.
+The purpose of this is to be transparent and identify those silenced instances 
 
 Blocked instances
 -------
@@ -29,6 +29,7 @@ Blocked instances
 | wrongthink.net | silenced | GNUSocial apparent free speech zone&#9313; |
 | pawoo.net | suspended | lolicon&#9314; |
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone&#9313;, lolicon&#9314; |
+| preteengirls.biz | suspended | Pedophilia | 
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |
