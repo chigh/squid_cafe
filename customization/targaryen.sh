@@ -18,3 +18,24 @@ sed -i -e 's/160/300/g' \
 ### Dragon emoji
 #sed -i -e 's/1f602/1f432/g' \
     #app/javascript/mastodon/features/compose/components/emoji_picker_dropdown.js
+
+cd live/config/locales
+
+### Change "Toots" to "Posts" on profile pages
+sed -i -e 's/Toots with replies/Posts with replies/' \
+    es.yml \
+    eo.yml \
+    sv.yml \
+    nl.yml \
+    pt-BR.yml \
+    en.yml \
+    ca.yml
+
+sed -i -e 's/Toots/Posts/g' \
+    es.yml \
+    eo.yml \
+    sv.yml \
+    nl.yml \
+    pt-BR.yml \
+    en.yml \
+    ca.yml
