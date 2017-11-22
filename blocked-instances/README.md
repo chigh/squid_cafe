@@ -49,7 +49,6 @@ Notes on our instance
 - We don't accept hate speech.
 - We don't accept violent nationalism or National Socialism.
 - We are not a "free speech zone."
-- We pass no judgment on those that do, but our users may not want to engage with such content. This is what alt accounts are for. 
 
 References
 ----
