@@ -28,7 +28,7 @@ Blocked instances
 | wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; |
 | &mdash; | &mdash; | &mdash; | 
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; |
-| npf.mlpol.net | suspended | Nazis. Advice of octodon.social admin &#9313; &#9315; |
+| npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; |
 | pawoo.net | suspended | lolicon &#9314; |
 | preteengirls.biz | suspended | Pedophilia | 
 
