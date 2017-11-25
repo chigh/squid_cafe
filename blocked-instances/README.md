@@ -27,7 +27,7 @@ Blocked instances
 | woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
 | wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; |
 | &mdash; | &mdash; | &mdash; | 
-| baraag.net | suspended | &#9313; lolicon |
+| baraag.net | suspended | &#9313; lolicon, and drawn child pornography |
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; |
 | pawoo.net | suspended | lolicon &#9314; |
