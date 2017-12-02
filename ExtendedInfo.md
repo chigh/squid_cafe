@@ -1,6 +1,8 @@
+<a name="top"></a>
+
 This is currently a bare-bones instance. I'm working to add things as I go along. As long as you're okay with some occasional down-time (so far, none) here at the beginning, you'll be good.
 
-I'm not your parent, so act like a decent human being. To that... Everyone deserves freedom, but <em>not</em> harassment. Do the latter and you lose the former.
+I'm not your parent, so act like a decent human being. To that... Everyone deserves freedom, but **not** harassment. Do the latter and you lose the former.
 
 <!--TOC --> 
 
@@ -60,7 +62,7 @@ These provisions notwithstanding, the administration of the service reserves the
 
 ## Support 
 	
-<a href="https://github.com/chigh/squid_cafe/issues">Please report if the site is slow or anything doesn't work.</a></p>
+* [Please report if the site is slow or anything doesn't work.](https://github.com/chigh/squid_cafe/issues)
 
 <div style="text-align:right;">
 <a style="text-decoration: none;" href="#top">&uuarr;</a>
@@ -68,7 +70,9 @@ These provisions notwithstanding, the administration of the service reserves the
 
 ## Silenced/Blocked Instances
 
-See the full list <a href="https://github.com/chigh/squid_cafe/tree/master/blocked-instances">here</a>. Please talk with me if you administer an instance on this list and think it shouldn't be.
+Please talk with me if you administer an instance on this list and think it shouldn't be.
+
+* See the full list [here](https://github.com/chigh/squid_cafe/tree/master/blocked-instances).
 
 <div style="text-align:right;">
 <a style="text-decoration: none;" href="#top">&uuarr;</a>
