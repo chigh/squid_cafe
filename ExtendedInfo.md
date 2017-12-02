@@ -79,7 +79,10 @@ See the full list <a href="https://github.com/chigh/squid_cafe/tree/master/block
 * Backups
 	* database &amp; config: <span style="border: 1px solid #666;padding:2px">🦑</span>
 	* user uploads: <span style="border: 1px solid #666;padding:2px;">🦑</span>
-* Incorporate external storage (e.g. S3): <span style="border: 1px solid #666;padding:2px;">🔧</span>
+	* stream-line the process: <span style="border: 1px solid #666;padding:2px;">🔧</span>
+* Incorporate external storage (e.g. S3): 
+	* Backups: <span style="border: 1px solid #666;padding:2px;">🦑</span>
+	* Site/User Uploads/Cache: <span style="border: 1px solid #666;padding:2px;">🔧</span>
 
 <div style="text-align:right;">
 <a style="text-decoration: none;" href="#top">&uuarr;</a>
