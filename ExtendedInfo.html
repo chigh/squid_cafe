@@ -1,456 +1,169 @@
-<!DOCTYPE html>  
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>ExtendedInfo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style id="mkstylesheet">
-/*  bootstrap.css */
-html,body{margin:0;padding:0;}
-body {padding: 20px;}
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
-table{border-collapse:collapse;border-spacing:0;}
-ol,ul{list-style:none;}
-q:before,q:after,blockquote:before,blockquote:after{content:"";}
-html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
-a:focus{outline:thin dotted;}
-a:hover,a:active{outline:0;}
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
-audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
-audio:not([controls]){display:none;}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
-sup{top:-0.5em;}
-sub{bottom:-0.25em;}
-img{border:0;-ms-interpolation-mode:bicubic;}
-button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
-button,input{line-height:normal;*overflow:visible;}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
-button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
-input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
-input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
-textarea{overflow:auto;vertical-align:top;}
-html,body{background-color:#ffffff;}
-body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:18px;color:#404040;}
-.container{width:940px;margin-left:auto;margin-right:auto;zoom:1;}.container:before,.container:after{display:table;content:"";zoom:1;*display:inline;}
-.container:after{clear:both;}
-.container-fluid{position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
-.container-fluid:after{clear:both;}
-.container-fluid>.sidebar{float:left;width:220px;}
-.container-fluid>.content{margin-left:240px;}
-a{color:#0069d6;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;}
-.pull-right{float:right;}
-.pull-left{float:left;}
-.hide{display:none;}
-.show{display:block;}
-.row{zoom:1;margin-left:-20px;}.row:before,.row:after{display:table;content:"";zoom:1;*display:inline;}
-.row:after{clear:both;}
-p{font-size:13px;font-weight:normal;line-height:18px;margin-bottom:9px;}p small{font-size:11px;color:#bfbfbf;}
-h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
-h1{margin-bottom:18px;font-size:30px;line-height:36px;}h1 small{font-size:18px;}
-h2{font-size:24px;line-height:36px;}h2 small{font-size:14px;}
-h3,h4,h5,h6{line-height:36px;}
-h3{font-size:18px;}h3 small{font-size:14px;}
-h4{font-size:16px;}h4 small{font-size:12px;}
-h5{font-size:14px;}
-h6{font-size:13px;color:#bfbfbf;text-transform:uppercase;}
-ul,ol{margin:0 0 18px 25px;}
-ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
-ul{list-style:disc;}
-ol{list-style:decimal;}
-/* li{line-height:18px;color:#808080;} */
-li{line-height:1.25em;} /* mod chigh */
-ul.unstyled{list-style:none;margin-left:0;}
-dl{margin-bottom:18px;}dl dt,dl dd{line-height:18px;}
-dl dt{font-weight:bold;}
-dl dd{margin-left:9px;}
-hr{margin:20px 0 19px;border:0;border-bottom:1px solid #eee;}
-strong{font-style:inherit;font-weight:bold;}
-em{font-style:italic;font-weight:inherit;line-height:inherit;}
-.muted{color:#bfbfbf;}
-blockquote{margin-bottom:18px;border-left:5px solid #eee;padding-left:15px;}blockquote p{font-size:14px;font-weight:300;line-height:18px;margin-bottom:0;}
-blockquote small{display:block;font-size:12px;font-weight:300;line-height:18px;color:#bfbfbf;}blockquote small:before{content:'\2014 \00A0';}
-address{display:block;line-height:18px;margin-bottom:18px;}
-code,pre{padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-code{padding:1px 3px;}
-pre{background-color:#f5f5f5;display:block;padding:8.5px;margin:0 0 18px;line-height:18px;font-size:12px;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
-form{margin-bottom:18px;}
-fieldset{margin-bottom:18px;padding-top:18px;}fieldset legend{display:block;padding-left:150px;font-size:19.5px;line-height:1;color:#404040;*padding:0 0 5px 145px;*line-height:1.5;}
-form .clearfix{margin-bottom:18px;zoom:1;}form .clearfix:before,form .clearfix:after{display:table;content:"";zoom:1;*display:inline;}
-form .clearfix:after{clear:both;}
-label,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:normal;}
-label{padding-top:6px;font-size:13px;line-height:18px;float:left;width:130px;text-align:right;color:#404040;}
-form .input{margin-left:150px;}
-input[type=checkbox],input[type=radio]{cursor:pointer;}
-input,textarea,select,.uneditable-input{display:inline-block;width:210px;height:18px;padding:4px;font-size:13px;line-height:18px;color:#808080;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-input[type=checkbox],input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;border:none;}
-input[type=file]{background-color:#ffffff;padding:initial;border:initial;line-height:initial;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
-input[type=button],input[type=reset],input[type=submit]{width:auto;height:auto;}
-select,input[type=file]{height:27px;line-height:27px;*margin-top:4px;}
-select[multiple]{height:inherit;}
-textarea{height:auto;}
-.uneditable-input{background-color:#ffffff;display:block;border-color:#eee;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);cursor:not-allowed;}
-:-moz-placeholder{color:#bfbfbf;}
-::-webkit-input-placeholder{color:#bfbfbf;}
-input,textarea{-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;-moz-transition:border linear 0.2s,box-shadow linear 0.2s;-ms-transition:border linear 0.2s,box-shadow linear 0.2s;-o-transition:border linear 0.2s,box-shadow linear 0.2s;transition:border linear 0.2s,box-shadow linear 0.2s;-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);}
-input:focus,textarea:focus{outline:0;border-color:rgba(82, 168, 236, 0.8);-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);}
-input[type=file]:focus,input[type=checkbox]:focus,select:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:1px dotted #666;}
-form div.clearfix.error{background:#fae5e3;padding:10px 0;margin:-10px 0 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form div.clearfix.error>label,form div.clearfix.error span.help-inline,form div.clearfix.error span.help-block{color:#9d261d;}
-form div.clearfix.error input,form div.clearfix.error textarea{border-color:#c87872;-webkit-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);-moz-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);box-shadow:0 0 3px rgba(171, 41, 32, 0.25);}form div.clearfix.error input:focus,form div.clearfix.error textarea:focus{border-color:#b9554d;-webkit-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);-moz-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);box-shadow:0 0 6px rgba(171, 41, 32, 0.5);}
-form div.clearfix.error .input-prepend span.add-on,form div.clearfix.error .input-append span.add-on{background:#f4c8c5;border-color:#c87872;color:#b9554d;}
-table{width:100%;margin-bottom:18px;padding:0;border-collapse:separate;*border-collapse:collapse;font-size:13px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left;}
-// table{width:75%;margin-bottom:18px;padding:0;border-collapse:separate;*border-collapse:collapse;font-size:13px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left;}
-table th{padding-top:9px;font-weight:bold;vertical-align:middle;border-bottom:1px solid #ddd;}
-table td{vertical-align:top;}
-table th+th,table td+td{border-left:1px solid #ddd;}
-table tr+tr td{border-top:1px solid #ddd;}
-table tbody tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0;}
-table tbody tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0;}
-table tbody tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px;}
-table tbody tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0;}
-.zebra-striped tbody tr:nth-child(odd) td{background-color:#f9f9f9;}
-.zebra-striped tbody tr:hover td{background-color:#f5f5f5;}
-.zebra-striped .header{cursor:pointer;}.zebra-striped .header:after{content:"";float:right;margin-top:7px;border-width:0 4px 4px;border-style:solid;border-color:#000 transparent;visibility:hidden;}
-.zebra-striped .header:hover:after{visibility:visible;}
-footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
-.page-header{margin-bottom:17px;border-bottom:1px solid #ddd;-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);-moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);}.page-header h1{margin-bottom:8px;}
-.close{float:right;color:#000000;font-size:20px;font-weight:bold;line-height:13.5px;text-shadow:0 1px 0 #ffffff;filter:alpha(opacity=20);-khtml-opacity:0.2;-moz-opacity:0.2;opacity:0.2;}.close:hover{color:#000000;text-decoration:none;filter:alpha(opacity=40);-khtml-opacity:0.4;-moz-opacity:0.4;opacity:0.4;}
+<div style="position:fixed; bottom: 0; right: 0;;text-align:right;"><p>🦑☕️</p></div>
 
-pre {
-	padding: 0;
-	margin: 10px 0px 10px;
-	overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
-	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
-}
-pre code {
-	margin: 5px;  /*--Left Margin--*/
-	padding: 0px;
-	display: block;
-    line-height: 18px;
-}
-.center { text-align:center}
-.left {text-align:left}
-.right {text-align:right}
+<div id="intro">
+    <p>This is currently a bare-bones instance. I'm working to add things as I go along. As long as you're okay with some occasional down-time (so far, none) here at the beginning, you'll be good. </p>
 
-/*  style.css */
-body{font-size:14px;line-height:1.6;font-family:sans-serif;padding: 20px;max-width: 800px; color: #333;} 
-body>*:first-child{margin-top:0!important;}
-body>*:last-child{margin-bottom:0!important;}
-body a:active {outline: none;}
-body a:hover {text-decoration: underline;}
-body a {color: #4183C4;text-decoration: none;}
-body a.absent{color:#c00;}
-body h1, body h2, h3, h4, h5, h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:antialiased;}
-body h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code{font-size:inherit;}
-body h1{font-size:28px;color:#000;}
-body h2{font-size:24px;border-bottom:1px solid #ccc;color:#000;}
-body h3{font-size:18px;}
-body h4{font-size:16px;}
-body h5{font-size:14px;}
-body h6{color:#777;font-size:14px;}
-body p, blockquote, ul, ol, dl, li {font-size: inherit;} /* add chigh */
-/* body p, blockquote, ul, ol, dl, li, table, pre{margin:15px 0;color:#333;} *//* mod chigh */
-body p, blockquote, ul, ol, dl, li, table, pre{color:#333;} /* mod chigh */
-/* body hr{background:transparent url('../../images/modules/pulls/dirty-shade.png') repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0;} */
-body hr{color:#000;border:1px solid #000;} /* add chigh */
-body>h2:first-child,>h1:first-child,>h1:first-child+h2,>h3:first-child,>h4:first-child,>h5:first-child,>h6:first-child{margin-top:0;padding-top:0;}
-body h1+p, h2+p, h3+p, h4+p, h5+p, h6+p{margin-top:0;}
-body li p.first{display:inline-block;}
-body ul, ol{padding-left:30px;}
-body ul li>:first-child, ol li>:first-child{margin-top:0;}
-body ul li>:last-child, ol li>:last-child{margin-bottom:0;}
-body dl{padding:0;}
-body dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px;}
-body dl dt:first-child{padding:0;}
-body dl dt>:first-child{margin-top:0;}
-body dl dt>:last-child{margin-bottom:0;}
-body dl dd{margin:0 0 15px;padding:0 15px;}
-body dl dd>:first-child{margin-top:0;}
-body dl dd>:last-child{margin-bottom:0;}
-body blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777;}
-body blockquote>:first-child{margin-top:0;}
-body blockquote>:last-child{margin-bottom:0;}
-body table{padding:0;}
-body table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0;}
-body table tr:nth-child(2n){background-color:#f8f8f8;}
-body table tr th{font-weight:bold;}
-body table tr th, table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:3px 13px;}
-body table tr th>:first-child, table tr td>:first-child{margin-top:0;}
-body table tr th>:last-child, table tr td>:last-child{margin-bottom:0;}
-body img{max-width:100%;}
-body span.frame{display:block;overflow:hidden;}
-body span.frame>span{border:1px solid #ddd;display:block;float:left;overflow:hidden;margin:13px 0 0;padding:7px;width:auto;}
-body span.frame span img{display:block;float:left;}
-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0;}
-body span.align-center{display:block;overflow:hidden;clear:both;}
-body span.align-center>span{display:block;overflow:hidden;margin:13px auto 0;text-align:center;}
-body span.align-center span img{margin:0 auto;text-align:center;}
-body span.align-right{display:block;overflow:hidden;clear:both;}
-body span.align-right>span{display:block;overflow:hidden;margin:13px 0 0;text-align:right;}
-body span.align-right span img{margin:0;text-align:right;}
-body span.float-left{display:block;margin-right:13px;overflow:hidden;float:left;}
-body span.float-left span{margin:13px 0 0;}
-body span.float-right{display:block;margin-left:13px;overflow:hidden;float:right;}
-body span.float-right>span{display:block;overflow:hidden;margin:13px auto 0;text-align:right;}
-body code, tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px;}
-body code,pre{font-family:Consolas,Monaco,"Andale Mono","Courier New", monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;} /* add chigh */
-body pre>code{margin:0;padding:0;white-space:pre;border:none;background:transparent;}
-body .highlight pre, pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px;}
-/* body pre code, pre tt{background-color:transparent;border:none;} */
+    <p>I'm not your parent, so act like a decent human being. To that... Everyone deserves freedom, but <em>not</em> harassment. Do the latter and you lose the former.</p>
 
-
-/* CHIGH --------------------------------------------------------------- */
-body{padding:5px;font-size:14px;line-height:1.6;font-family:Calibri,sans-serif;padding:20px;max-width:896px;color:#333;} 
-h1,h2,h3,h4 {clear:both;padding:0;margin-bottom:0;} /* too much padding *below* the 
-                                                       heading text. The padding 
-                                                       should be above the text, 
-                                                       not below.                   */
-h1 {color:#00629b;} 
-
-span.logo { display:block;width: 191px; height: 36px; background-image: url('data:image/png;base64,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'); background-repeat: no repeat; }
-/* span.ch { display:block;width:100px; height:89px; margin-right: 10px; background-image:url('http://bluecat.in/images/bcn_cathead.svg'); background-repeat: no repeat; float: right; } */
-/* div.logo { width: 191px;height: 35px; background-image: url('images/bcn_logo.svg');background-repeat: no repeat;} */
-div.logo { width: 191px;height: 35px; background-image: url('http://bluecat.in/images/bcn_logo.svg');background-repeat: no repeat;} 
-div.ch { width:100px; height:89px; margin-right: 10px; background-image:url('images/bcn_cathead.svg'); background-repeat: no repeat; float: right; }
-
-/* ul, ol      {margin: 2px auto 2px auto;padding-bottom: 5px;} */
-/* ul, ol      {margin: auto; padding-bottom: 0px;} */
-address     {float: right; /*border-top:1px solid #00629b;*/}
-address a   {color:#404040; text-decoration: none;}
-address a:hover {color:#00629b;text-decoration: none;}
-
-abbr        {border-bottom: 1px dashed #bbb;}
-abbr.title, abbr.bluecat, abbr.name   {text-decoration: none; border: none;}
-
-/* inline code  [t/r/b/l]  [t/rl/b]  [tb/rl] */
-p code {padding: 2px 3px 1px; border:1px solid #ccc;} 
-
-/* other code */
-pre code    {margin-bottom: 15px; background-color:#f5f5f5;display:block;border:1px solid #ccc;}
-li          {margin: 2px auto 2px auto;}
-li p { margin: auto; }
-
-.bottom     {width: 100%;border-top:1px solid #00629b; clear: both; display: block; padding: 10px 0px;}
-.bluecat, .name    {color: #00629b; text-decoration: none; font-size: 1.1rem; font-weight: bold;}
-.caption    {font-size: 0.7em; font-style: italic;}
-.cert       {font-size: 0.9em; font-weight: bold; color:#696969;}
-.grey       {border: 1px solid #555;margin-top:40px;}
-.invisible  {display:none;}
-.nowrap     {white-space: pre;} /* */
-.small      {font-size: 0.85em;}
-.spacer     {display:block;height:1.0em;}
-.top        {display:block; clear:both; float:right; content: "\21a9";}
-.up { display: block; width: 100%; text-align: right; }
-.up:after { padding-left: 3px; content: "\2191"; }
-.warning    {color: #f00; background: #000; font-style: bold;margin-right: 5px;}
-
-.footnote   {font-size: .6em;vertical-align: top;} /* content: "+";} */
-.footnotes hr {border:1px solid #ccc;}
-.footnotes li {font-size: 0.80rem; margin: 0px auto 0px auto;}
-.footerlogo {display:block;width:200px; float: left;}
-.footer     {width:50%;height:2.0em;float:right;text-align:right;border-top: 1px solid #00629b;font-size:0.9rem;display:block;}
-#footer     {text-align:right;border-top:1px solid #00629b;font-size:0.9rem;margin-top:20px;width:400px;height:50px;padding-top:5px;padding-bottom:30px;float:right;clear:both;height:15px;}
-#footer img {vertical-align: middle; height: 15px;}
-.center {text-align:center; display:block;}
-.hr { display:block; height: 1px; width: 100%; border-bottom: solid 1px #ccc; }
-
-/* Colors */
-.green  { color: #090; font-weight: bold; } 
-.red    { color: #f00; font-weight: bold; } 
-.yellow { color: #fd0; font-weight: bold; } 
-.blue   { color: #06c; font-weight: bold; } /* 00629b */
-.orange { color: #fa5; font-weight: bold; }
-
-/* Arrows */
-.return-arrow:before { content: "\21a9"; }
-.right-arrow:before  { content: "\2192"; }
-.left-arrow:before   { content: "\2190"; }
-.up-arrow:before     { content: "\2191"; }
-.down-arrow:before   { content: "\2193"; }
-.recurr-arrow:before { content: "\21ba"; }
-.anticlock:before { content: "\21ba"; }
-.clockwise:before { content: "\21bb"; }
-
-/* Symbols */ 
-.star:before   { content: "\272d"; color: #F00;}
-.approx:before { content: "\2248"; }
-.ne:before     { content: "\2260"; }
-.gt:before     { content: "\2265"; }
-.lt:before     { content: "\2264"; }
-.number:before { content: "\2116"; }
-.gear:before   { content: "\2699"; }
-
-#mkreplaced-toc{list-style-position:inside;padding:0;margin:0 0 0 1rem;list-style-type:none}#mkreplaced-toc li::before{content:''}#mkreplaced-toc li{font-size:1rem;line-height:1.25;font-weight:normal}#mkreplaced-toc li ul{font-size:1.3rem;font-weight:300;padding:.5rem 0;margin:0 0 0 1rem}#mkreplaced-toc li.missing{list-style-type:none !important}#mkreplaced-toc.max-1 ul,#mkreplaced-toc.max1 ul{display:none}#mkreplaced-toc.max-2 ul ul,#mkreplaced-toc.max2 ul ul{display:none}#mkreplaced-toc.max-3 ul ul ul,#mkreplaced-toc.max3 ul ul ul{display:none}#mkreplaced-toc.max-4 ul ul ul ul,#mkreplaced-toc.max4 ul ul ul ul{display:none}#mkreplaced-toc.max-5 ul ul ul ul ul,#mkreplaced-toc.max5 ul ul ul ul ul{display:none}.rtl{direction:rtl;text-align:right}@media print{body{background:white;line-height:1.4}html,body,#wrapper{max-width:100%;width:100%;-webkit-text-size-adjust:none;-webkit-perspective:none !important;box-sizing:border-box;width:auto;border:0;margin:0;padding:0;float:none;-moz-box-shadow:none !important;-webkit-box-shadow:none !important;box-shadow:none !important}mark{background:transparent !important}h1,h2,h3,h4,h5,h6{page-break-after:avoid}p,h2,h3{orphans:3;widows:3}section{page-break-before:avoid}pre>code{white-space:pre;word-break:break-word}#generated-toc,#firstdiff,#toc-title,#mkdocumentprogress,#mkincludechart,#mkprogressbar1,#mkprogressbar2,.mkscrollmeter,#alllinks,.popup{display:none !important}.suppressprintlinks a{color:inherit !important;text-decoration:none !important;border-bottom:none !important;cursor:default !important}.hrefafterlinktext #wrapper a:link:after,.hrefafterlinktext #wrapper a:visited:after{content:" (" attr(href) ") ";font-size:90%;opacity:0.9}.nocodebreak pre{page-break-inside:avoid}img,table,figure{page-break-inside:avoid}.breakfootnotes .footnotes{page-break-before:always}.breakfootnotes .footnotes hr{display:none}#mktoctitle{display:block}#print-title{display:block;border-bottom:solid 1px #666}#wrapper pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{display:block}.task-list .task-list-item{list-style-type:none !important}.task-list .gh-complete.task-list-item .task-list-item-checkbox:before{content:'\2713';background:#838387}.task-list .task-list-item-checkbox{-webkit-appearance:none;position:relative}.task-list .task-list-item-checkbox:before{content:' ';border:solid 1px #aaa;width:1em;height:1em;display:block;border-radius:2px;left:-20px;top:-.75em;color:white;font-weight:bold;line-height:1;text-align:center;position:absolute}}
-#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc,#wrapper #generated-toc-clone ul,#wrapper #mkreplaced-toc ul{list-style-position:inside}#wrapper #generated-toc-clone li.missing,#wrapper #mkreplaced-toc li.missing{list-style-type: none!important}#wrapper #generated-toc-clone,#wrapper #mkreplaced-toc{list-style-type: none}#wrapper #generated-toc-clone>li>ul,#wrapper #mkreplaced-toc>li>ul {list-style-type: upper-alpha}#wrapper #generated-toc-clone>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul{list-style-type: decimal}#wrapper #generated-toc-clone>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul{list-style-type: lower-alpha}#wrapper #generated-toc-clone>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul{list-style-type: disc}#wrapper #generated-toc-clone>li>ul>li>ul>li>ul>li>ul>li>ul,#wrapper #mkreplaced-toc>li>ul>li>ul>li>ul>li>ul>li>ul{list-style-type: square}
-#mkreplaced-toc li {font-size:16px;font-family: Calibri,sans-serif;}
-.wiki-link, .notmissing {font-size:16px;font-family: Calibri,sans-serif;}
-
-</style>
-
-<style id="mkprintstyles">@media print{h1:nth-of-type(n+2){page-break-before:always}
-html,body,#wrapper{font-size:10pt!important}
-}
-</style>
-
-
-</head>
-<body class="normal mkscrivannotations nocodebreak">
-  <div id="wrapper">
-      <p>This is currently a bare-bones instance. I&rsquo;m working to add things as I go along. As long as you&rsquo;re okay with some occasional down-time (so far, none) here at the beginning, you&rsquo;ll be good.</p>
-
-<p>I&rsquo;m not your parent, so act like a decent human being. To that&hellip; Everyone deserves freedom, but <em>not</em> harassment. Do the latter and you lose the former.</p>
-
-
-
-<ul style="display: block;" id="mkreplaced-toc" class="max-6"><li class="missing" style="list-style-type: none;"><ul><li class="notmissing"><a href="#code-of-conduct-guidelines" class="wiki-link">Code of Conduct Guidelines</a><ul><li class="notmissing"><a href="#content-warnings" class="wiki-link">Content Warnings</a></li></ul></li><li class="notmissing"><a href="#enforcement" class="wiki-link">Enforcement</a></li><li class="notmissing"><a href="#support" class="wiki-link">Support</a></li><li class="notmissing"><a href="#silenced-blocked-instances" class="wiki-link">Silenced/Blocked Instances</a></li><li class="notmissing"><a href="#things-for-me-to-do..." data-orig-id="things-for-me-to-do..." class="wiki-link">Things for me to do…</a></li><li class="notmissing"><a href="#donate" class="wiki-link">Donate</a></li></ul></li></ul>
-
-
-
-
-<p></p>
-
-<h2 id="code-of-conduct-guidelines">Code of Conduct Guidelines</h2>
-
-<p>The following guidelines are not a legal document, and final interpretation is up to the administration of squid.cafe; they are here to provide you with an insight into our content moderation policies:</p>
-
-<ul>
-<li>The following types of content will be removed from the public timeline:
-
-<ul>
-<li>Excessive advertising</li>
-<li>Uncurated news bots posting from third-party news sources</li>
-<li>Untagged pornography and sexually explicit content</li>
-<li>Untagged gore and graphic violence</li>
-</ul>
-</li>
-<li>The following types of content will be removed from the public timeline, and may result in account suspension and revocation of access to the service:
-
-<ul>
-<li>Racism or advocation of racism</li>
-<li>Sexism or advocation of sexism</li>
-<li>Discrimination against gender and sexual minorities, or advocation thereof Xenophobic and/or violent nationalism</li>
-<li>Discrimination against any minority and/or religion</li>
-<li>Promotion of suicide or self-harm</li>
-</ul>
-</li>
-<li>The following types of content are explicitly disallowed and will result in revocation of access to the service:
-
-<ul>
-<li>Sexual depictions of children</li>
-<li>Depictions of graphic violence against women</li>
-<li>Content illegal in Germany and/or France, such as holocaust denial or Nazi symbolism</li>
-<li>Conduct promoting the ideology of National Socialism</li>
-<li>Specific threats of violence to an individual or group of people</li>
-<li>Sending unwanted sexual content, objectifying others in a sexually explicit manner, or otherwise engaging in sexual misconduct</li>
-</ul>
-</li>
-<li><em>Any</em> conduct intended to stalk or harass other users, or to impede other users from utilizing the service, or to degrade the performance of the service, or to harass other users, or to incite other users to perform any of the aforementioned actions, is also disallowed, and subject to punishment up to and including revocation of access to the service. This includes, but is not limited to, the following behaviors:
-
-<ul>
-<li>Continuing to engage in conversation with a user that has specifically has requested for said engagement with that user to cease and desist may be considered harassment, regardless of platform-specific privacy tools employed.</li></li>
-<li>Aggregating, posting, and/or disseminating a person&rsquo;s demographic, personal, or private data without express permission (informally called doxing or dropping dox) may be considered harassment.</li></li>
-<li>Inciting users to engage another user in continued interaction or discussion after a user has requested for said engagement with that user to cease and desist (informally called brigading or dogpiling) may be considered harassment.</li></li>
-</ul>
-</li>
-</ul>
-
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
+    <ul>
+        <li style="line-height: 1.25em;"><a href="#code">Code of Conduct</a>
+            <ul>
+                <li style="line-height: 1.0em;"><a href="#cw">Content Warnings</a></li>
+                <li style="line-height: 1.0em;"><a href="#enforcement">Enforcement</a></li>
+            </ul>
+        </li>
+        <li style="line-height: 1.0em;"><a href="#support">Support</a></li>
+        <li style="line-height: 1.0em;"><a href="#blocked">Blocked Instances</a></li>
+        <li style="line-height: 1.0em;"><a href="#todo">To do list</a></li>
+        <li style="line-height: 1.0em;"><a href="#donate">Donate</a></li>
+    </ul>
 </div>
 
+<hr style="margin: 10px 0px 10px 0px"/>
 
-<h3 id="content-warnings">Content Warnings</h3>
+<!-- ###################################################################### -->
+<div id="code_of_conduct">
+    <a name="code"></a>
+    <h2>Code of Conduct Guidelines</h2>
+    
+    <p>The following guidelines are not a legal document, and final interpretation is up to the administration of squid.cafe; they are here to provide you with an insight into our content moderation policies:</p>
 
-<p><strong>CW:</strong> On public statuses (not unlisted, private, or direct), content warnings are required for any kind of (explicit enough) violence (with or without pics, including gore, *phobia, abuse, sexual or not) and referring to it; sexual content (pics must already be tagged as NSFW, use a CW if you have text or want to warn about specific content). This is not about what is culturally or religiously accepted, but about common sources of trauma that deeply hurt people for very real reasons. Consider yourself lucky if you don&rsquo;t need any of it, but it&rsquo;s not always about you, but about others.</p></p>
+    <ol type="1">
+        <li>The following types of content will be removed from the public timeline:
+            <ol type="a">
+                <li>Excessive advertising</li>
+                <li>Uncurated news bots posting from third-party news sources</li>
+                <li>Untagged pornography and sexually explicit content</li>
+                <li>Untagged gore and graphic violence</li>
+            </ol>
+        </li>
+        <li>The following types of content will be removed from the public timeline, and may result in account suspension and revocation of access to the service:
+            <ol type="a">
+                <li>Racism or advocation of racism</li>
+                <li>Sexism or advocation of sexism</li>
+                <li>Discrimination against gender and sexual minorities, or advocation thereof Xenophobic and/or violent nationalism</li>
+                <li>Discrimination against any minority and/or religion</li>
+                <li>Promotion of suicide or self-harm.</li>
+            </ol>
+        </li>
+        
+        <li>The following types of content are explicitly disallowed and will result in revocation of access to the service:
+            <ol type="a">
+                <li>Sexual depictions of children</li>
+                <li>Depictions of graphic violence against women
+                <li>Content illegal in Germany and/or France, such as holocaust denial or Nazi symbolism</li>
+                <li>Conduct promoting the ideology of National Socialism</li>
+                <li>Specific threats of violence to an individual or group of people</li>
+                <li>Sending unwanted sexual content, objectifying others in a sexually explicit manner, or otherwise engaging in sexual misconduct</li>
+            </ol>
+        </li>
 
-<p>They are also appreciated but not mandatory on: politics, spoilers, anything depressing, etc. Use them in a thoughtful, opportunistic way.</p>
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
-</div>
-
-
-<h2 id="enforcement">Enforcement</h2>
-
-<p>On this instance, a status that doesn&rsquo;t follow these rules may be deleted. On repeated offences or if disturbing public timelines, the account may get silenced (only their followers will see statuses). If silencing is not enough, the account may get completely suspended.</p>
-
-<p>If the account is on another instance, it may get silenced and suspended from here, and I will not hesitate to share reports with other instance admins.</p>
-
-<p>I&rsquo;ll always try to solve problems in the most rational and safe way possible for users, and try to discuss any issue with the people concerned if I think it&rsquo;s worth it. If you at least try to be good and comprehensive, so will I. I understand and accept mistakes, but not being bad on purpose.</p>
-
-<p>These provisions notwithstanding, the administration of the service reserves the right to revoke any user&rsquo;s access permissions, at any time, for any reason, except as limited by law.</p>
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
-</div>
-
-
-<h2 id="support">Support</h2>
-
-<p><a href="https://github.com/chigh/squid_cafe/issues">Please report if the site is slow or anything doesn&rsquo;t work.</a></p></p>
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
-</div>
-
-
-<h2 id="silenced-blocked-instances">Silenced/Blocked Instances</h2>
-
-<p>See the full list <a href="https://github.com/chigh/squid_cafe/tree/master/blocked-instances">here</a>. Please talk with me if you administer an instance on this list and think it shouldn&rsquo;t be.</p>
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
-</div>
-
-
-<h2 id="things-for-me-to-do...">Things for me to do&hellip;</h2>
-
-<ul>
-<li>Backups
-
-<ul>
-<li>database &amp; config: <span style="border: 1px solid #666;padding:2px">🦑</span></li>
-<li>user uploads: <span style="border: 1px solid #666;padding:2px;">🦑</span></li>
-<li>stream-line the process: <span style="border: 1px solid #666;padding:2px;">🔧</span></li>
-</ul>
-</li>
-<li>Incorporate external storage (e.g. S3):
-
-<ul>
-<li>Backups: <span style="border: 1px solid #666;padding:2px;">🦑</span></li>
-<li>Site/User Uploads/Cache: <span style="border: 1px solid #666;padding:2px;">🔧</span></li>
-</ul>
-</li>
-</ul>
-
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
-</div>
-
-
-<h2 id="donate">Donate</h2>
-
-<p>Donations will help keep this instance alive. Funds from here will go directly to the hosting bill.</p></p>
-
-<ul>
-<li><a href="https://patreon.com/chigh">Patreon (monthly)</a></li>
-<li><a href="https://cash.me/tchigh">Cash.me (1-time)</a></li>
-<li><a href="https://paypal.me/chigh">Paypal.me (1-time)</a></li>
-</ul>
-
-
-<div style="text-align:right;">  
-<a style="text-decoration: none;" href="#top">&uuarr;</a>  
-</div>
-
-<!-- ##END MARKED WRAPPER## -->
+        <li><strong>Any</strong> conduct intended to stalk or harass other users, or to impede other users from utilizing the service, or to degrade the performance of the service, or to harass other users, or to incite other users to perform any of the aforementioned actions, is also disallowed, and subject to punishment up to and including revocation of access to the service. This includes, but is not limited to, the following behaviors:
+            <ol type="a">
+                <li>Continuing to engage in conversation with a user that has specifically has requested for said engagement with that user to cease and desist may be considered harassment, regardless of platform-specific privacy tools employed.</li>
+                <li>Aggregating, posting, and/or disseminating a person's demographic, personal, or private data without express permission (informally called doxing or dropping dox) may be considered harassment.</li>
+                <li>Inciting users to engage another user in continued interaction or discussion after a user has requested for said engagement with that user to cease and desist (informally called brigading or dogpiling) may be considered harassment.</li>
+            </ol>
+        </li>
+    </ol>
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
     </div>
+</div>
 
+<!-- ###################################################################### -->
+<div id="content_warnings">
+    <a name="cw"></a>
+    <h3>Content Warnings</h3>
+    
+    <p><em>CW:</em> On public statuses (not unlisted, private, or direct), content warnings are required for any kind of (explicit enough) violence (with or without pics, including gore, *phobia, abuse, sexual or not) and referring to it; sexual content (pics must already be tagged as NSFW, use a CW if you have text or want to warn about specific content). This is not about what is culturally or religiously accepted, but about common sources of trauma that deeply hurt people for very real reasons. Consider yourself lucky if you don't need any of it, but it's not always about you, but about others.</p>
+    
+    <p>They are also appreciated but not mandatory on: politics, spoilers, anything depressing, etc. Use them in a thoughtful, opportunistic way.</p>
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
+    </div>
+</div>
 
+<!-- ###################################################################### -->
+<div id="enforcement">
+    <a name="enforcement"></a>
+    <h2>Enforcement</h2>
+    
+    <p>On this instance, a status that doesn't follow these rules may be deleted. On repeated offences or if disturbing public timelines, the account may get silenced (only their followers will see statuses). If silencing is not enough, the account may get completely suspended.</p>
+    
+    <p>If the account is on another instance, it may get silenced and suspended from here, and I will not hesitate to share reports with other instance admins.</p>
+    
+    <p>I'll always try to solve problems in the most rational and safe way possible for users, and try to discuss any issue with the people concerned if I think it's worth it. If you at least try to be good and comprehensive, so will I. I understand and accept mistakes, but not being bad on purpose.</p>
+    
+    <p>These provisions notwithstanding, the administration of the service reserves the right to revoke any user's access permissions, at any time, for any reason, except as limited by law.</p>
+    
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
+    </div>
+</div>
 
-<script>(function(factory){if(typeof define==="function"&&define.amd){define("bidi_helpers",[],factory)}else{window.bidi_helpers=factory()}})(function(){var module={};module.Dir={RTL:-1,UNKNOWN:0,LTR:1};module.Format={LRE:"\u202A",RLE:"\u202B",PDF:"\u202C",LRM:"\u200E",RLM:"\u200F"};module.ltrChars_="A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02B8\u0300-\u0590\u0800-\u1FFF\u2C00-\uFB1C\uFE00-\uFE6F\uFEFD-\uFFFF";module.rtlChars_="\u0591-\u07FF\uFB1D-\uFDFF\uFE70-\uFEFC";module.ltrDirCheckRe_=new RegExp("^[^"+module.rtlChars_+"]*["+module.ltrChars_+"]");module.ltrCharReg_=new RegExp("["+module.ltrChars_+"]");module.hasAnyLtr=function(text){return module.ltrCharReg_.test(text)};module.rtlDirCheckRe_=new RegExp("^[^"+module.ltrChars_+"]*["+module.rtlChars_+"]");module.rtlRe=module.rtlDirCheckRe_;module.isRtlText=function(text){return module.rtlDirCheckRe_.test(text)};module.isLtrText=function(text){return module.ltrDirCheckRe_.test(text)};module.isRequiredLtrRe_=/^http:\/\/.*/;module.hasNumeralsRe_=/\d/;module.estimateDirection=function(text,detectionThreshold){var rtlCount=0;var totalCount=0;var hasWeaklyLtr=false;var tokens=text.split(/\s+/);for(var i=0;i<tokens.length;i++){var token=tokens[i];if(module.isRtlText(token)){rtlCount++;totalCount++}else{if(module.isRequiredLtrRe_.test(token)){hasWeaklyLtr=true}else{if(module.hasAnyLtr(token)){totalCount++}else{if(module.hasNumeralsRe_.test(token)){hasWeaklyLtr=true}}}}}return totalCount==0?(hasWeaklyLtr?module.Dir.LTR:module.Dir.UNKNOWN):(rtlCount/totalCount>detectionThreshold?module.Dir.RTL:module.Dir.LTR)};return module});(function(factory){if(typeof define==="function"&&define.amd){define("bidiweb",["bidi_helpers"],factory)}else{window.bidiweb=factory(bidi_helpers)}})(function(bidi_helpers){var module={};var IProcessor={makeRtl:function(element){},makeLtr:function(element){}};var css_processor=function(classes){return{makeRtl:function(element){element.classList.add(classes.rtl)},makeLtr:function(element){element.classList.add(classes.ltr)}}};var style_processor=function(falign){return{makeRtl:function(element){element.style.direction="rtl";if(falign){element.style.textAlign="right"}},makeLtr:function(element){element.style.direction="ltr";if(falign){element.style.textAlign="left"}}}};module.processors={css:css_processor,style:style_processor};var nodeListMock=function(node){var list=[node];list.item=function(i){return list[i]};return list};module.process=function(query,processor){var elements;if(query instanceof NodeList){elements=query}else{if(query instanceof Node){elements=nodeListMock(query)}else{elements=document.querySelectorAll(query)}}module.process_elements(elements,processor);return elements};module.process_elements=function(elements,processor){for(var index=0;index<elements.length;index++){var element=elements.item(index);var text=element.textContent||element.value||element.placeholder||"";var dir=bidi_helpers.estimateDirection(text,0.4);if(dir==bidi_helpers.Dir.RTL){processor.makeRtl(element)}else{if(dir==bidi_helpers.Dir.LTR){processor.makeLtr(element)}}}};module.process_css=function(query,classes){var proc=module.processors.css(classes);return module.process(query,proc)};module.process_style=function(query,falign){var proc=module.processors.style(falign);return module.process(query,proc)};module.style=function(query){return module.process_style(query,true)};module.css=function(query){return module.process_css(query,{rtl:"rtl",ltr:"ltr"})};module.htmlToElement=function(html){var container=document.createElement("div");container.innerHTML=html;return container};module.html_css=function(html){var container=module.htmlToElement(html);var nodes=container.querySelectorAll("*");module.css(nodes);return container.innerHTML};module.html_style=function(html){var container=module.htmlToElement(html);var nodes=container.querySelectorAll("*");module.style(nodes);return container.innerHTML};return module});</script>
+<!-- ###################################################################### -->
+<div id="support">
+    <a name="support"></a>
+    <h2>Support</h2>
+    
+    <p><a href="https://github.com/chigh/squid_cafe/issues">Please report if the site is slow or anything doesn't work.</a></p>
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
+    </div>
+</div>
 
-</body>
-</html>
+<!-- ###################################################################### -->
+<div id="blocked">
+    <h2>Silenced/Blocked Instances<a name="blocked"/></h2>
+
+    <p>See the full list <a href="https://github.com/chigh/squid_cafe/tree/master/blocked-instances">here</a>. Please talk with me if you administer an instance on this list and think it shouldn't be.</p>
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
+    </div>
+</div>
+
+<!-- ###################################################################### -->
+<div id="todo">
+    <a name="todo"></a>
+    <h2>Things for me to do...</h2>
+
+    <ul>
+        <li style="line-height: 1.25em;">Backups
+            <ul>
+                <li style="line-height: 1.5em;">database &amp; config: <span style="border: 1px solid #666;padding:2px">🦑</span></li>
+                <li style="line-height: 1.5em;">user uploads: <span style="border: 1px solid #666;padding:2px;">🦑<</span></li>
+                <li style="line-height: 1.5em;">streamline the process: <span style="border: 1px solid #666;padding:2px;">🔧</span></li>
+            </ul>
+        </li>
+        <li style="line-height: 1.5em;">Incorporate external storage (e.g. S3): <span style="border: 1px solid #666;padding:2px;">🔧</span>
+            <ul>
+                <li>for backups <span style="border: 1px solid #666;padding:2px;">🦑</span></li>
+                <li>for site uploads and cache</li>
+            </ul>
+        </li>
+    </ul>
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
+    </div>
+</div>
+
+<!-- ###################################################################### -->
+<div id="donate">
+    <a name="donate"></a>
+    <h2>Want to help keep this going?</h2>
+
+    <p>Donations will help keep this instance alive. Funds from here will go directly to the hosting bill.</p>
+    
+    <ul>
+        <li style="line-height: 1.0em;"><a href="https://patreon.com/chigh">Patreon</a> (monthly)</li>
+        <li style="line-height: 1.0em;"><a href="https://cash.me/tchigh">Cash.me</a> (1-time)</li>
+        <li style="line-height: 1.0em;"><a href="https://paypal.me/chigh">PayPal.me</a> (1-time)</li>
+    </ul>
+    <div style="text-align:right;">
+        <a style="text-decoration: none;" href="#top">&uuarr;</a>
+    </div>
+</div>
+
+* test of markdown in extended information
+* does it work?
