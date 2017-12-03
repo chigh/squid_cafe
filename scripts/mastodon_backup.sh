@@ -64,13 +64,26 @@ _encrypt() {
     for file in $(find $BACKUP_HOME -type f -name \*.tgz)
     do
         if [[ ! -e ${file}.gpg ]]; then
-            gpg --batch --yes -es -o $file.gpg -r clair.high@tch3.com $file
+            gpg --batch --yes -e -o $file.gpg -r chigh@keybase.io $file
             rm -f $file
+        fi
+        if [[ -e ${file}.gpg ]]; then
+            cp ${file}.gpg /backups && rm ${file}.gpg
         fi
     done
 }
+
+__everything() {
+    _backup_db
+    _backup_conf
+    _backup_env
+    _create_archive
+    _clean_up
+    _encrypt
+}
 case ${1:-} in 
    --encrypt|-e) _clean_up; _encrypt ;; 
+    -a) __everything ;;
      *) _backup_db; 
         _backup_conf; 
         _backup_env;
