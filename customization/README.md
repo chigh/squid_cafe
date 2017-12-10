@@ -1,4 +1,4 @@
-targaryen.sh makes a few customizations.
+# targaryen.sh 
 
 * Increases/changes the maximum post size.
 * Increases/changes the maximum user bio size.
@@ -12,3 +12,14 @@ Originally obtained from: https://social.targaryen.house/@queen
 * https://github.com/Wonderfall/dockerfiles
 * https://github.com/Wonderfall/dockerfiles/blob/master/mastodon/targaryen/targaryen.sh
 
+
+# Reserved usernames
+
+- akkorokamui
+- cecaelia
+- cthulhu
+- dakuwaqa
+- kraken
+- octopus
+- olifat
+- tentacles
