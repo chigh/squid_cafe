@@ -22,4 +22,6 @@ Originally obtained from: https://social.targaryen.house/@queen
 - kraken
 - octopus
 - olifat
+- squid
+- squidward
 - tentacles
