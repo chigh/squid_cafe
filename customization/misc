@@ -1,0 +1,7 @@
+app/models/account.rb
+app/views/settings/profiles/show.html.haml
+app/javascript/mastodon/locales/th.json
+app/javascript/mastodon/locales/en.json
+app/javascript/mastodon/locales/defaultMessages.json
+app/javascript/mastodon/locales/ca.json
+app/javascript/mastodon/features/compose/components/compose_form.js
