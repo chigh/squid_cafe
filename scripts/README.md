@@ -3,7 +3,8 @@
 * db\_maint.sh
     * typical vacuum and reindex of database
 * mastodon\_backup.sh
-    * script to make backups of the instance with the option to encrypt to myself.
+    * script to make backups of the instance and encrypt them
+    * only keep 7 days worth
 * mastodon.sh
     * Script to start/stop/restart/enable/disable the mastodon services
 * service-check.sh

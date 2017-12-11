@@ -10,6 +10,7 @@
     #config/locales/*.yml
 
 ### Increase bio length
+cd live
 sed -i -e 's/160/300/g' \
     app/javascript/packs/public.js \
     app/models/account.rb \
@@ -19,7 +20,7 @@ sed -i -e 's/160/300/g' \
 #sed -i -e 's/1f602/1f432/g' \
     #app/javascript/mastodon/features/compose/components/emoji_picker_dropdown.js
 
-cd live/config/locales
+cd config/locales
 
 ### Change "Toots" to "Posts" on profile pages
 sed -i -e 's/Toots with replies/Posts with replies/' \

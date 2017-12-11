@@ -73,6 +73,9 @@ _encrypt() {
     done
 }
 
+_purge() {
+    find /backups -mtime +7 -type f -exec rm '{}' \;
+}
 __everything() {
     _backup_db
     _backup_conf
@@ -82,7 +85,8 @@ __everything() {
     _encrypt
 }
 case ${1:-} in 
-   --encrypt|-e) _clean_up; _encrypt ;; 
+   --encrypt|-e) _clean_up; _encrypt ; _purge ;; 
+    -p) _clean_up; _purge ;;
     -a) __everything ;;
      *) _backup_db; 
         _backup_conf; 
