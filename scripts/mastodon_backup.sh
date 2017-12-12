@@ -74,7 +74,10 @@ _encrypt() {
 }
 
 _purge() {
-    find /backups -mtime +7 -type f -exec rm '{}' \;
+    cd /backups
+    ls -1pr | grep -v '/$' | tail -n +8 | tr '\n' '\0' | xargs -0 rm --
+    # (ls -t|head -n 5;ls)|sort|uniq -u|xargs rm
+    # (ls -t|head -n 5;ls)|sort|uniq -u|sed -e 's,.*,"&",g'|xargs rm
 }
 __everything() {
     _backup_db
