@@ -8,12 +8,37 @@ _logger() {
 }
 status=$(curl -sI https://squid.cafe/about | grep HTTP | awk '{print $2}')
 
+_start() {
+    swapon -a
+    cd $SYSTEMD
+    _logger "Starting mastodon..."
+    systemctl start mastodon-*  &> $LOGFILE
+    if [[ $? -eq 0 ]]
+    then
+        _logger "Mastodon started."
+    else
+        _logger "Mastodon failed to start."
+    fi
+}
+
+_stop() {
+    cd $SYSTEMD
+    _logger "Stopping mastodon..."
+    systemctl stop mastodon-* &> $LOGFILE
+    if [[ $? -eq 0 ]]
+    then
+        _logger "Mastodon stopped."
+    else
+        _logger "Mastodon failed to stop."
+    fi
+    swapoff -a
+}
+
 __daemon() {
     if [[ $status -ne 200 ]]; then
         _logger Restarting service: ${status}
-        mastodon.sh stop
-        sleep 1
-        mastodon.sh start
+        _stop
+        _start
     else
         _logger Service OK
     fi
@@ -30,7 +55,18 @@ __stdout() {
     fi
 }
 
-case ${1:-} in
-    --status|-s) __stdout ;;
-              *) __daemon ;;
+_restart() { 
+    _stop && _start
+}
+
+case "${1:-}" in
+    --cron) __daemon ;;
+         *) __stdout ;;
 esac
+
+#if [[ -z $- ]]
+#if [[ -t 0 ]]
+#case ${1:-} in
+#    --status|-s) __stdout ;;
+#              *) __daemon ;;
+#esac

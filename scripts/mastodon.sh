@@ -60,7 +60,7 @@ _enable() {
 case "$1" in
 	start) _start ;;
 	stop) _stop ;;
-	restart) _stop && _start ;; 
+	restart) _stop ; _start ;; 
 	enable) _enable ;;
 	disable) _disable ;;
     backup) shift ; ${HOME}/scripts/mastodon_backup.sh "${@}" ;;
