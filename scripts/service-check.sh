@@ -12,7 +12,7 @@ _start() {
     swapon -a
     cd $SYSTEMD
     _logger "Starting mastodon..."
-    systemctl start mastodon-*  &> $LOGFILE
+    systemctl start /etc/systemd/system/mastodon-*  &> $LOGFILE
     if [[ $? -eq 0 ]]
     then
         _logger "Mastodon started."
@@ -24,7 +24,7 @@ _start() {
 _stop() {
     cd $SYSTEMD
     _logger "Stopping mastodon..."
-    systemctl stop mastodon-* &> $LOGFILE
+    systemctl stop /etc/systemd/system/mastodon-* &> $LOGFILE
     if [[ $? -eq 0 ]]
     then
         _logger "Mastodon stopped."
@@ -34,14 +34,8 @@ _stop() {
     swapoff -a
 }
 
-__daemon() {
-    if [[ $status -ne 200 ]]; then
-        _logger Restarting service: ${status}
-        _stop
-        _start
-    else
-        _logger Service OK
-    fi
+__restart() { 
+    _stop ; _start
 }
 
 __stdout() {
@@ -55,9 +49,16 @@ __stdout() {
     fi
 }
 
-_restart() { 
-    _stop && _start
+__daemon() {
+    if [[ $status -ne 200 ]]
+    then
+        #_logger "Restarting service: ${status}"
+        __restart
+    else
+        _logger Service OK
+    fi
 }
+
 
 case "${1:-}" in
     --cron) __daemon ;;

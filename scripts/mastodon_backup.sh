@@ -79,7 +79,7 @@ _purge() {
     # (ls -t|head -n 5;ls)|sort|uniq -u|xargs rm
     # (ls -t|head -n 5;ls)|sort|uniq -u|sed -e 's,.*,"&",g'|xargs rm
 }
-__everything() {
+_everything() {
     _backup_db
     _backup_conf
     _backup_env
@@ -90,7 +90,7 @@ __everything() {
 case ${1:-} in 
    --encrypt|-e) _clean_up; _encrypt ; _purge ;; 
     -p) _clean_up; _purge ;;
-    -a) __everything ;;
+    -a) _everything ;;
      *) _backup_db; 
         _backup_conf; 
         _backup_env;

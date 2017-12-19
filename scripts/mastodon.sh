@@ -57,11 +57,20 @@ _enable() {
 	fi
 }
 
+_mastlog() { grep MASTODON /var/log/syslog | less; }
+
+_db_maint() {
+    su - mastodon -c "vacuumdb -v -d mastodon_production -z";
+    su - mastodon -c "reindexdb -v -d mastodon_production";
+}
+
+
 case "$1" in
 	start) _start ;;
 	stop) _stop ;;
 	restart) _stop ; _start ;; 
 	enable) _enable ;;
 	disable) _disable ;;
-    backup) shift ; ${HOME}/scripts/mastodon_backup.sh "${@}" ;;
+    --log) _mastlog ;;
+    --db) _db_maint ;;
 esac
