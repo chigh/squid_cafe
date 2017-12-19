@@ -90,8 +90,7 @@ Please talk with me if you administer an instance on this list and think it shou
 
 Donations will help keep this instance alive. Funds from here will go directly to the hosting bill.</p>
 
-<!-- * [Patreon (monthly)](https://patreon.com/chigh) --> 
-
+* [Patreon (monthly)](https://patreon.com/chigh)
 * [Buy me a coffee.](https://ko-fi.com/squidcafe)
 * [Cash.me (1-time)](https://cash.me/tchigh)
 * [Paypal.me (1-time)](https://paypal.me/chigh)
