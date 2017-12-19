@@ -1,4 +1,5 @@
 # Scripts
+Scripts for maintenance, etc. 
 
 * db\_maint.sh
     * typical vacuum and reindex of database

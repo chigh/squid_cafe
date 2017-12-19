@@ -1,4 +1,4 @@
-Stuff I want to remember.
+Customization changes I want to remember
 
 ## [Changing the post button (allegedly)](https://github.com/tootsuite/mastodon/issues/5672)
 - config/locales/en.yml
