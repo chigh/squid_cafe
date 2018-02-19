@@ -32,10 +32,10 @@ Blocked instances
 | baraag.net | suspended | &#9313; lolicon, and drawn child pornography |
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; |
-| pawoo.net | suspended | &#9314; lolicon |
+| pawoo.net | suspended | lolicon &#9314; |
 | preteengirls.biz | suspended | Pedophilia | 
 | social.allthefallen.ninja | suspended | lolicon &#9314; | 
-| social.homunyan.com | suspended | &#9314; lolicon | 
+| social.homunyan.com | suspended | lolicon &#9314; | 
 | mastodon.loliandstuff.moe | suspended | lolicon &#9314; | 
 
 <!--
