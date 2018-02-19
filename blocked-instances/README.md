@@ -66,3 +66,4 @@ References
 - https://woofer.alfter.us/conversation/62187#notice-124626
 - https://plateia.org/notice/10007
 - https://toot.cat/users/polymerwitch/updates/21545
+- http://telegra.ph/Instances-to-silencesuspend-on-Mastodon-06-23
