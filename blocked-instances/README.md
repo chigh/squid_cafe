@@ -12,6 +12,7 @@ Blocked instances
 | ---- | ---- | ---- |
 | admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline |
 | antitwitter.moe | silenced | Advice of octodon.social admin &#9315; |
+| counter.social | silenced | |
 | ediot.social | silenced | Encyclopedia Dramatica. Apparent free speech zone &#9313; |
 | freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; |
 | gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
@@ -31,8 +32,11 @@ Blocked instances
 | baraag.net | suspended | &#9313; lolicon, and drawn child pornography |
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; |
-| pawoo.net | suspended | lolicon &#9314; |
+| pawoo.net | suspended | &#9314; lolicon |
 | preteengirls.biz | suspended | Pedophilia | 
+| social.allthefallen.ninja | suspended | lolicon &#9314; | 
+| social.homunyan.com | suspended | &#9314; lolicon | 
+| mastodon.loliandstuff.moe | suspended | lolicon &#9314; | 
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |
