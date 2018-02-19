@@ -26,6 +26,7 @@ Blocked instances
 | unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
 | woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
 | wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; |
+| 2.distsn.org | suspended | Spammer's delight. |
 | &mdash; | &mdash; | &mdash; | 
 | baraag.net | suspended | &#9313; lolicon, and drawn child pornography |
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; |
