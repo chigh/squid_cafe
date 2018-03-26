@@ -1,7 +1,7 @@
 List of Squid Café blocked instances
 =======
 
-_Latest update: Mon Feb 19 22:19:12 UTC 2018_
+_Latest update: Mon Mar 26 01:29:04 UTC 2018_
 
 This is a list of Mastodon/GNU Social instances blocked by [squid.cafe](https://squid.cafe). If you think an instance has been unfairly blocked, please open an issue and/or a pull request.
 
@@ -10,35 +10,38 @@ The purpose of this is to be transparent and identify those silenced instances
 Blocked instances
 -------
 
-| Instance | Status&#9312; | Reason |
-| ---- | ---- | ---- |
-| admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline |
-| antitwitter.moe | silenced | Advice of octodon.social admin &#9315; |
-| counter.social | silenced | |
-| ediot.social | silenced | Encyclopedia Dramatica. Apparent free speech zone &#9313; |
-| freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; |
-| gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
-| noagendasocial.com | silenced | Apparent free speech zone &#9313; |
-| porntoot.com | silenced | Unflagged porn |
-| rainbowdash.net | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; |
-| sealion.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; |
-| shitposter.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; |
-| social.au2pb.net | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
-| social.heldscal.la | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; |
-| toot.love | silenced | Advice of octodon.social admin &#9315; |
-| unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
-| woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; |
-| wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; |
-| 2.distsn.org | suspended | Spammer's delight. |
-| &mdash; | &mdash; | &mdash; | 
-| baraag.net | suspended | &#9313; lolicon, and drawn child pornography |
-| gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; |
-| npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; |
-| pawoo.net | suspended | lolicon &#9314; |
-| preteengirls.biz | suspended | Pedophilia | 
-| social.allthefallen.ninja | suspended | lolicon &#9314; | 
-| social.homunyan.com | suspended | lolicon &#9314; | 
-| mastodon.loliandstuff.moe | suspended | lolicon &#9314; | 
+| Instance | Status&#9312; | Reason | Date | 
+| ---- | ---- | ---- | ---- | 
+| admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline | --- |
+| antitwitter.moe | silenced | Advice of octodon.social admin &#9315; | --- | 
+| counter.social | silenced | --- | --- |
+| ediot.social | silenced | Encyclopedia Dramatica. Apparent free speech zone &#9313; | --- | 
+| freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | --- | 
+| gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | --- | 
+| noagendasocial.com | silenced | Apparent free speech zone &#9313; | --- | 
+| porntoot.com | silenced | Unflagged porn | --- | 
+| rainbowdash.net | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | --- | 
+| sealion.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | --- | 
+| shitposter.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | --- | 
+| social.au2pb.net | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | --- | 
+| social.heldscal.la | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | --- | 
+| social.raptorengineering.io | silenced | Advertising. | 2018-03-25 | 
+| toot.love | silenced | Advice of octodon.social admin &#9315; | --- | 
+| unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | --- |
+| woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | --- | 
+| wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; | --- | 
+| &mdash; | &mdash; | &mdash; | --- | 
+| 2.distsn.org | suspended | Spammer's delight. | --- | 
+| baraag.net | suspended | &#9313; lolicon, and drawn child pornography | --- | 
+| community.highlandarrow.com | suspended | GamerGate | 2018-03-25 | 
+| gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | --- |
+| npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; | --- | 
+| pawoo.net | suspended | lolicon &#9314; | --- | 
+| preteengirls.biz | suspended | Pedophilia | --- | 
+| social.allthefallen.ninja | suspended | lolicon &#9314; | --- | 
+| social.homunyan.com | suspended | lolicon &#9314; | --- | 
+| mastodon.loliandstuff.moe | suspended | lolicon &#9314; | --- | 
+| wxw.moe | suspended | lilicon &#9314; | 2018-03-25 | 
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |
@@ -68,4 +71,5 @@ References
 - https://woofer.alfter.us/conversation/62187#notice-124626
 - https://plateia.org/notice/10007
 - https://toot.cat/users/polymerwitch/updates/21545
-- http://telegra.ph/Instances-to-silencesuspend-on-Mastodon-06-23
+- [Toot.cafe's blocked instances](https://github.com/tootcafe/blocked-instances)
+- [Dzuk's Blocklist Advisory](http://telegra.ph/Instances-to-silencesuspend-on-Mastodon-06-23)
