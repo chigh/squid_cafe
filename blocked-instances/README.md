@@ -50,7 +50,7 @@ Blocked instances
 ### Footnotes
 
 - &#9312; Silenced vs suspended: silenced means they don't appear in the Federated timeline, but if someone discovers the accounts somehow (e.g. via replying to another toot) then they can follow and it will appear in their Home view.
-- &#9313; "Free speech zone": a place where it's okay to promote e.g. National Socialism because the argument is that open discussion is more important than people's sensitivities or the denazification laws of Germany/France/etc. The term is not meant in a derogatory way; if there's a better one, let me know.
+- &#9313; "Free speech zone": a place where it's okay to be shitty to some one/group under the guise of "free speech"
 - &#9314; lolicon: sexualized depictions of children
 - &#9315; Allows harassment
 
