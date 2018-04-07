@@ -30,3 +30,4 @@ app/config/settings.yml
 - tentacles
 - vampire
 - whiplash
+- enjoyyourbunny

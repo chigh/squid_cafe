@@ -35,6 +35,7 @@ Blocked instances
 | baraag.net | suspended | &#9313; lolicon, and drawn child pornography | &mdash; | 
 | community.highlandarrow.com | suspended | GamerGate | 2018-03-25 | 
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | &mdash; |
+| pl.smuglo.li | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | &mdash; |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
 | pawoo.net | suspended | lolicon &#9314; | &mdash; | 
 | preteengirls.biz | suspended | Pedophilia | &mdash; | 
