@@ -30,19 +30,22 @@ Blocked instances
 | unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; |
 | woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| thechad.zone | silenced | Abuse. Male Supremacy culture. Transphobic, racist, etc. &#9315; | 2018-06-15
 | &mdash; | &mdash; | &mdash; | &mdash; | 
 | 2.distsn.org | suspended | Spammer's delight. | &mdash; | 
 | baraag.net | suspended | &#9313; lolicon, and drawn child pornography | &mdash; | 
 | community.highlandarrow.com | suspended | GamerGate | 2018-03-25 | 
+| loli.estate | suspended | lilocon &#9314; | 2018-06-15 |
 | gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | &mdash; |
 | pl.smuglo.li | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
 | pawoo.net | suspended | lolicon &#9314; | &mdash; | 
+| pleroma.cucked.me | suspended | &#9313; | 2018-06-15 |
 | preteengirls.biz | suspended | Pedophilia | &mdash; | 
 | social.allthefallen.ninja | suspended | lolicon &#9314; | &mdash; | 
 | social.homunyan.com | suspended | lolicon &#9314; | &mdash; | 
 | mastodon.loliandstuff.moe | suspended | lolicon &#9314; | &mdash; | 
-| wxw.moe | suspended | lilicon &#9314; | 2018-03-25 | 
+| wxw.moe | suspended | lilicon &#9314; | 2018-03-25 |
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |

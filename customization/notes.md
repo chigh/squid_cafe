@@ -13,7 +13,7 @@ Customization changes I want to remember
 - app/views/settings/profiles/show.html.haml
 
 ## Reserved usernames
-app/config/settings.yml 
+_config/settings.yml_
 
 - akkorokamui
 - cecaelia
