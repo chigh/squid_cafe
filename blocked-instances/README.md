@@ -17,6 +17,7 @@ Blocked instances
 | counter.social | silenced | &mdash; | &mdash; |
 | ediot.social | silenced | Encyclopedia Dramatica. Apparent free speech zone &#9313; | &mdash; | 
 | freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| freespeech.firedragonstudios.com | silenced | 'free speech' &#9313; | 2018-06-15 |
 | gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | noagendasocial.com | silenced | Apparent free speech zone &#9313; | &mdash; | 
 | porntoot.com | silenced | Unflagged porn | &mdash; | 
@@ -45,7 +46,7 @@ Blocked instances
 | social.allthefallen.ninja | suspended | lolicon &#9314; | &mdash; | 
 | social.homunyan.com | suspended | lolicon &#9314; | &mdash; | 
 | mastodon.loliandstuff.moe | suspended | lolicon &#9314; | &mdash; | 
-| wxw.moe | suspended | lilicon &#9314; | 2018-03-25 |
+| wxw.moe | suspended | lolicon &#9314; | 2018-03-25 |
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |
