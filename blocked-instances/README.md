@@ -40,7 +40,7 @@ Blocked instances
 | pl.smuglo.li | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
 | pawoo.net | suspended | lolicon &#9314; | &mdash; | 
-| pleroma.cucked.me | suspended | &#9313; | 2018-06-15 |
+| pleroma.cucked.me | suspended | also uses cucked unironically. &#9313; | 2018-06-15 |
 | preteengirls.biz | suspended | Pedophilia | &mdash; | 
 | social.allthefallen.ninja | suspended | lolicon &#9314; | &mdash; | 
 | social.homunyan.com | suspended | lolicon &#9314; | &mdash; | 
