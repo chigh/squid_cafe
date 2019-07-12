@@ -1,0 +1,5 @@
+PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:${HOME}/.rbenv/shims/"
+RAILS_ENV=production
+NUM_DAYS=5
+0 1,13 * * * mastodon (echo "____________________________" >> /var/log/mastodon.log; date >>/var/log/mastodon.log 2>&1 ; cd ${HOME}/live && bin/tootctl media remove >>/var/log/mastodon.log 2>&1)
+59 * * * *   mastodon (echo "____________________________" >> /var/log/mastodon.log; date >>/var/log/mastodon.log 2>&1 ; cd ${HOME}/live && bin/tootctl media remove >>/var/log/mastodon.log 2>&1)
