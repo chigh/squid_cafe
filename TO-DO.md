@@ -9,3 +9,4 @@
     * <del>for backups</del>
     * for site uploads and cache
 * **[Custom CSS](https://github.com/tootsuite/documentation/blob/master/Running-Mastodon/Customizing.md)** 
+* Upgrade to latest stable stream
