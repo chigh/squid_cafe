@@ -30,6 +30,7 @@ bundle install --deployment --without development test
 bundle install -j$(getconf _NPROCESSORS_ONLN) --deployment --without development test
 
 cd ~/live
+curl --compressed -o- -L https://yarnpkg.com/install.sh | bash # Upgrade yarn
 yarn install --pure-lockfile
 
 
