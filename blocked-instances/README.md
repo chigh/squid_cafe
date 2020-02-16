@@ -47,6 +47,8 @@ Blocked instances
 | social.homunyan.com | suspended | lolicon &#9314; | &mdash; | 
 | mastodon.loliandstuff.moe | suspended | lolicon &#9314; | &mdash; | 
 | wxw.moe | suspended | lolicon &#9314; | 2018-03-25 |
+| cliterati.club | silenced | TERFs | 2020-02-12 |
+| crypto-group-buy.com | suspended | spammer | 2020-02-15 |
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |
