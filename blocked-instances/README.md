@@ -13,9 +13,7 @@ Blocked instances
 | Instance | Status&#9312; | Reason | Date | 
 | ---- | ---- | ---- | ---- | 
 | admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline | &mdash; |
-| antitwitter.moe | silenced | Advice of octodon.social admin &#9315; | &mdash; | 
 | counter.social | silenced | &mdash; | &mdash; |
-| ediot.social | silenced | Encyclopedia Dramatica. Apparent free speech zone &#9313; | &mdash; | 
 | freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | freespeech.firedragonstudios.com | silenced | 'free speech' &#9313; | 2018-06-15 |
 | gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
@@ -32,12 +30,12 @@ Blocked instances
 | woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | thechad.zone | silenced | Abuse. Male Supremacy culture. Transphobic, racist, etc. &#9315; | 2018-06-15
+| cliterati.club | silenced | TERFs | 2020-02-12 |
 | &mdash; | &mdash; | &mdash; | &mdash; | 
 | 2.distsn.org | suspended | Spammer's delight. | &mdash; | 
 | baraag.net | suspended | &#9313; lolicon, and drawn child pornography | &mdash; | 
 | community.highlandarrow.com | suspended | GamerGate | 2018-03-25 | 
 | loli.estate | suspended | lilocon &#9314; | 2018-06-15 |
-| gs.smuglo.li | suspended | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | &mdash; |
 | pl.smuglo.li | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
 | npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
 | pawoo.net | suspended | lolicon &#9314; | &mdash; | 
@@ -47,8 +45,17 @@ Blocked instances
 | social.homunyan.com | suspended | lolicon &#9314; | &mdash; | 
 | mastodon.loliandstuff.moe | suspended | lolicon &#9314; | &mdash; | 
 | wxw.moe | suspended | lolicon &#9314; | 2018-03-25 |
-| cliterati.club | silenced | TERFs | 2020-02-12 |
 | crypto-group-buy.com | suspended | spammer | 2020-02-15 |
+| daffodil-11.org | suspended | Identified by Firefox as a malicious site | 2020-03-15 | 
+
+### No longer exists
+
+| instance     | former status | description | date | 
+| :--          | :--           | :--         | :--  |
+| ediot.social | silenced      | Encyclopedia Dramatica. Apparent free speech zone &#9313; | &mdash; | 
+| gs.smuglo.li | suspended     | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | &mdash; |
+| antitwitter.moe | silenced | Advice of octodon.social admin &#9315; | &mdash; | 
+
 
 <!--
 | social.targaryen.house | silenced | Apparent free speech zone&#9313; |
