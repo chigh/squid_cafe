@@ -52,7 +52,7 @@ printf "Prese <enter> to run maintenance...\n"
 _pause
 
 cd ~/live
-RAILS_ENV=production bundle exec rails mastodon:maintenance:remove_regeneration_markers
+#RAILS_ENV=production bundle exec rails mastodon:maintenance:remove_regeneration_markers
 RAILS_ENV=production bin/tootctl cache clear
 RAILS_ENV=production bundle exec rails db:migrate
 
