@@ -3,8 +3,15 @@ set +o errexit
 
 _int_trap
 
+###########################################################################
+printf "Check required software versions (e.g. redis-server)... \n"
+_pause
+
+# wget http://download.redis.io/redis-stable.tar.gz
+###########################################################################
 printf "This will update Mastodon (no release candidates), Ruby, and node.js..."
 _pause
+
 
 ###########################################################################
 printf "Mastodon updates...\n"
