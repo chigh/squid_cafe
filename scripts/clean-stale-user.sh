@@ -1,5 +1,5 @@
 cd ~/live
-stale_users="${HOME}/stale_users.txt"
+stale_users="/root/stale_users.txt"
 
 for user in $(cat ${stale_users})
 do

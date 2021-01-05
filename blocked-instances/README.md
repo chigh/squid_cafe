@@ -1,8 +1,6 @@
 List of Squid Café blocked instances
 =======
 
-_Latest update: Mon Mar 26 01:29:04 UTC 2018_
-
 This is a list of Mastodon/GNU Social instances blocked by [squid.cafe](https://squid.cafe). If you think an instance has been unfairly blocked, please open an issue.
 
 The purpose of this is to be transparent and identify those silenced instances 
@@ -86,4 +84,4 @@ References
 - https://plateia.org/notice/10007
 - https://toot.cat/users/polymerwitch/updates/21545
 - [Toot.cafe's blocked instances](https://github.com/tootcafe/blocked-instances)
-- [Dzuk's Blocklist Advisory](http://telegra.ph/Instances-to-silencesuspend-on-Mastodon-06-23)
+- [Dzuk's Blocklist Advisory](http://telegra.ph/Instances-to-silencesuspend-on-Mastodon-06-23) (depreciated)
