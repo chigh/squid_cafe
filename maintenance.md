@@ -21,5 +21,3 @@ stale-users.sh --clean
 bin/tootctl media remove
 bin/tootctl preview_cards remove
 ```
-
-

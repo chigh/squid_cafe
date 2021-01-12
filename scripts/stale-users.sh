@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
+date=$(date +%Y%m%d)
+stale_users="/var/tmp/stale-users-${date}.txt"
 
 _find() {
-    stale_users="/root/stale_users.txt"
 
     sudo -i -u postgres /bin/bash -l -c "psql -A -d mastodon_production \
         -c \"SELECT username||'@'||domain FROM public.accounts WHERE last_webfingered_at < \
         (CURRENT_TIMESTAMP - interval '3 months')\"" | \
-        tail -n +2 | head -n -1 > ${stale_users}
+        tail -n +2 | head -n -1 | tee ${stale_users}
 }
 
 _clean() {
     cd ~/live
-    stale_users="/root/stale_users.txt"
 
     for user in $(cat ${stale_users})
     do
@@ -27,13 +27,14 @@ rescue => err
 end"
     set +x
     done
+    [[ -f ${stale_users} ]] && rm -i ${stale_users} || true
 }
 
 _usage() {
     printf "$(basename $0) [--find|-f] [--clean|-c]\n"
 }
 
-case in ${1:-}
+case ${1:-} in
     --find|-f) _find ;;
    --clean|-c) _clean ;;
             *) _usage ;;
