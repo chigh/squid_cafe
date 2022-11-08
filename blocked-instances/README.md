@@ -21,6 +21,7 @@ Blocked instances
 | freespeech.firedragonstudios.com | silenced  | 'free speech' &#9313; | 2018-06-15 |
 | freespeechextremist.com          | suspended | 'free speech' anti-Semetic users &#9313; | 2022-11-08 |
 | freezepeach.xyz                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| gab.com                          | suspended | Far-right. Racist, white supremacists/nationalists etc | 2020 |
 | gorf.club                        | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | loli.estate                      | suspended | lilocon &#9314; | 2018-06-15 |
 | mastodon.loliandstuff.moe        | suspended | lolicon &#9314; | &mdash; | 
