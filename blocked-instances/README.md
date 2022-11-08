@@ -19,7 +19,7 @@ Blocked instances
 | crypto-group-buy.com             | suspended | spammer | 2020-02-15 |
 | daffodil-11.org                  | suspended | Identified by Firefox as a malicious site | 2020-03-15 | 
 | freespeech.firedragonstudios.com | silenced  | 'free speech' &#9313; | 2018-06-15 |
-| freespeechextremist.com          | suspended | 'free speech' anti-Semetic users | 2022-11-08 |
+| freespeechextremist.com          | suspended | 'free speech' anti-Semetic users &#9313; | 2022-11-08 |
 | freezepeach.xyz                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | gorf.club                        | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | loli.estate                      | suspended | lilocon &#9314; | 2018-06-15 |
