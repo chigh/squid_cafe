@@ -10,41 +10,43 @@ Blocked instances
 
 | Instance | Status&#9312; | Reason | Date | 
 | ---- | ---- | ---- | ---- | 
-| admins.town | silenced | Inter-admin politics that doesn't need to pollute the public timeline | &mdash; |
-| counter.social | silenced | &mdash; | &mdash; |
-| freezepeach.xyz | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| freespeech.firedragonstudios.com | silenced | 'free speech' &#9313; | 2018-06-15 |
-| gorf.club | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| noagendasocial.com | silenced | Apparent free speech zone &#9313; | &mdash; | 
-| porntoot.com | silenced | Unflagged porn | &mdash; | 
-| rainbowdash.net | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| sealion.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| shitposter.club | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| social.au2pb.net | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| social.heldscal.la | silenced | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| social.raptorengineering.io | silenced | Advertising. | 2018-03-25 | 
-| toot.love | silenced | Advice of octodon.social admin &#9315; | &mdash; | 
-| unsafe.space | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; |
-| woofer.alfter.us | silenced | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| wrongthink.net | silenced | GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| thechad.zone | silenced | Abuse. Male Supremacy culture. Transphobic, racist, etc. &#9315; | 2018-06-15
-| cliterati.club | silenced | TERFs | 2020-02-12 |
-| &mdash; | &mdash; | &mdash; | &mdash; | 
-| 2.distsn.org | suspended | Spammer's delight. | &mdash; | 
-| baraag.net | suspended | &#9313; lolicon, and drawn child pornography | &mdash; | 
-| community.highlandarrow.com | suspended | GamerGate | 2018-03-25 | 
-| loli.estate | suspended | lilocon &#9314; | 2018-06-15 |
-| pl.smuglo.li | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
-| npf.mlpol.net | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
-| pawoo.net | suspended | lolicon &#9314; | &mdash; | 
-| pleroma.cucked.me | suspended | also uses cucked unironically. &#9313; | 2018-06-15 |
-| preteengirls.biz | suspended | Pedophilia | &mdash; | 
-| social.allthefallen.ninja | suspended | lolicon &#9314; | &mdash; | 
-| social.homunyan.com | suspended | lolicon &#9314; | &mdash; | 
-| mastodon.loliandstuff.moe | suspended | lolicon &#9314; | &mdash; | 
-| wxw.moe | suspended | lolicon &#9314; | 2018-03-25 |
-| crypto-group-buy.com | suspended | spammer | 2020-02-15 |
-| daffodil-11.org | suspended | Identified by Firefox as a malicious site | 2020-03-15 | 
+| 2.distsn.org                     | suspended | Spammer's delight. | &mdash; | 
+| admins.town                      | silenced  | Inter-admin politics that doesn't need to pollute the public timeline | &mdash; |
+| baraag.net                       | suspended | &#9313; lolicon, and drawn child pornography | &mdash; | 
+| counter.social                   | silenced  | &mdash; | &mdash; |
+| cliterati.club                   | silenced  | TERFs | 2020-02-12 |
+| community.highlandarrow.com      | suspended | GamerGate | 2018-03-25 | 
+| crypto-group-buy.com             | suspended | spammer | 2020-02-15 |
+| daffodil-11.org                  | suspended | Identified by Firefox as a malicious site | 2020-03-15 | 
+| freespeech.firedragonstudios.com | silenced  | 'free speech' &#9313; | 2018-06-15 |
+| freespeechextremist.com          | suspended | 'free speech' anti-Semetic users | 2022-11-08 |
+| freezepeach.xyz                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| gorf.club                        | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| loli.estate                      | suspended | lilocon &#9314; | 2018-06-15 |
+| mastodon.loliandstuff.moe        | suspended | lolicon &#9314; | &mdash; | 
+| noagendasocial.com               | silenced  | Apparent free speech zone &#9313; | &mdash; | 
+| npf.mlpol.net                    | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
+| pawoo.net                        | suspended | lolicon &#9314; | &mdash; | 
+| pl.smuglo.li                     | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
+| pleroma.cucked.me                | suspended | also uses cucked unironically. &#9313; | 2018-06-15 |
+| porntoot.com                     | silenced  | Unflagged porn | &mdash; | 
+| preteengirls.biz                 | suspended | Pedophilia | &mdash; | 
+| rainbowdash.net                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| sealion.club                     | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| shitposter.club                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| social.allthefallen.ninja        | suspended | lolicon &#9314; | &mdash; | 
+| social.au2pb.net                 | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| social.heldscal.la               | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| social.homunyan.com              | suspended | lolicon &#9314; | &mdash; | 
+| social.raptorengineering.io      | silenced  | Advertising. | 2018-03-25 | 
+| thechad.zone                     | silenced  | Abuse. Male Supremacy culture. Transphobic, racist, etc. &#9315; | 2018-06-15
+| toot.love                        | silenced  | Advice of octodon.social admin &#9315; | &mdash; | 
+| truth.social                     | suspended | Nope. No way. | &mdash; |
+| unsafe.space                     | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; |
+| woofer.alfter.us                 | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| wrongthink.net                   | silenced  | GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| wxw.moe                          | suspended | lolicon &#9314; | 2018-03-25 |
+
 
 ### No longer exists
 
