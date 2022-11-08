@@ -62,17 +62,17 @@ These provisions notwithstanding, the administration of the service reserves the
 
 ## Support 
 	
-* [Please report if the site is slow or anything doesn't work.](https://github.com/chigh/squid_cafe/issues)
+* [Get Support](https://squid.cafe/support)
 
 <div style="text-align:right;">
 <a style="text-decoration: none;" href="#top">&uuarr;</a>
 </div>
 
-## Silenced/Blocked Instances
+## Blocked Instances
 
 Please talk with me if you administer an instance on this list and think it shouldn't be.
 
-* See the full list [here](https://github.com/chigh/squid_cafe/tree/master/blocked-instances).
+* See the full list [here](https://squid.cafe/blocked).
 
 <div style="text-align:right;">
 <a style="text-decoration: none;" href="#top">&uuarr;</a>
@@ -80,7 +80,7 @@ Please talk with me if you administer an instance on this list and think it shou
 
 ## Things for me to do...
 
-* [Moved here](https://github.com/chigh/squid_cafe/blob/master/To-Do.md)
+* [My To-do list](https://squid.cafe/todo)
 
 <div style="text-align:right;">
 <a style="text-decoration: none;" href="#top">&uuarr;</a>
