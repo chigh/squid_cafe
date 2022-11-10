@@ -44,6 +44,7 @@ Blocked instances
 | toot.love                        | silenced  | Advice of octodon.social admin &#9315; | &mdash; | 
 | truth.social                     | suspended | Nope. No way. | &mdash; |
 | unsafe.space                     | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; |
+| varishangout.net                 | suspended | racism, transphobia, anti-semitism | 2022-11-09 |
 | woofer.alfter.us                 | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | wrongthink.net                   | silenced  | GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | wxw.moe                          | suspended | lolicon &#9314; | 2018-03-25 |
