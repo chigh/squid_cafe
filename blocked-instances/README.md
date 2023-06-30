@@ -13,28 +13,36 @@ Blocked instances
 | 2.distsn.org                     | suspended | Spammer's delight. | &mdash; | 
 | admins.town                      | silenced  | Inter-admin politics that doesn't need to pollute the public timeline | &mdash; |
 | baraag.net                       | suspended | &#9313; lolicon, and drawn child pornography | &mdash; | 
+| chudbuds.lol                     | suspended | white supremacists, etc | 2022-11-11 |
 | counter.social                   | silenced  | &mdash; | &mdash; |
 | cliterati.club                   | silenced  | TERFs | 2020-02-12 |
 | community.highlandarrow.com      | suspended | GamerGate | 2018-03-25 | 
 | crypto-group-buy.com             | suspended | spammer | 2020-02-15 |
 | daffodil-11.org                  | suspended | Identified by Firefox as a malicious site | 2020-03-15 | 
+| dirtyhobby.xyz                   | suspended | related to raplst.town | &mdash; |
+| expired.mentality.rip            | suspended | gab adjacent | &mdash; |
 | freespeech.firedragonstudios.com | silenced  | 'free speech' &#9313; | 2018-06-15 |
 | freespeechextremist.com          | suspended | 'free speech' anti-Semetic users &#9313; | 2022-11-08 |
 | freezepeach.xyz                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
-| gab.com                          | suspended | Far-right. Racist, white supremacists/nationalists etc | 2020 |
+| gab.ai                           | suspended | Far-right. Racist, white supremacists/nationalists etc | 2022-11-11 |
+| gab.com (& develop.gab.com)      | suspended | Far-right. Racist, white supremacists/nationalists etc | 2020 |
+| glindr.org                       | suspended | Glinner. TERFs, transphobes | &mdash; |
 | gorf.club                        | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | loli.estate                      | suspended | lilocon &#9314; | 2018-06-15 |
 | mastodon.loliandstuff.moe        | suspended | lolicon &#9314; | &mdash; | 
 | noagendasocial.com               | silenced  | Apparent free speech zone &#9313; | &mdash; | 
 | npf.mlpol.net                    | suspended | Advice of octodon.social admin &#9313; &#9315; | &mdash; | 
+| parler.com                       | suspended | Far-right. | 2022-11-11 | 
 | pawoo.net                        | suspended | lolicon &#9314; | &mdash; | 
-| pl.smuglo.li                     | suspended | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
 | pleroma.cucked.me                | suspended | also uses cucked unironically. &#9313; | 2018-06-15 |
+| pleroma.mouse.services           | suspended | kiwifarms adjacent | &mdash |
 | porntoot.com                     | silenced  | Unflagged porn | &mdash; | 
 | preteengirls.biz                 | suspended | Pedophilia | &mdash; | 
 | rainbowdash.net                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| raplst.town                      | suspended | SA promoters | &mdash; |
 | sealion.club                     | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | shitposter.club                  | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
+| shortstackran.ch                 | suspended | White supremacists, etc. | 2022-11-11 |
 | social.allthefallen.ninja        | suspended | lolicon &#9314; | &mdash; | 
 | social.au2pb.net                 | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
 | social.heldscal.la               | silenced  | Advice of toot.cat/cybre.space admins, GNUSocial apparent free speech zone &#9313; | &mdash; | 
@@ -42,7 +50,8 @@ Blocked instances
 | social.raptorengineering.io      | silenced  | Advertising. | 2018-03-25 | 
 | thechad.zone                     | silenced  | Abuse. Male Supremacy culture. Transphobic, racist, etc. &#9315; | 2018-06-15
 | toot.love                        | silenced  | Advice of octodon.social admin &#9315; | &mdash; | 
-| truth.social                     | suspended | Nope. No way. | &mdash; |
+| truth.social                     | suspended | Not federating with far-right insurrectionists | 2020 |
+| truthsocial.com                  | suspended | Not federating with far-right insurrectionists | 2020 |
 | unsafe.space                     | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; |
 | varishangout.net                 | suspended | racism, transphobia, anti-semitism | 2022-11-09 |
 | woofer.alfter.us                 | silenced  | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313; | &mdash; | 
@@ -52,11 +61,12 @@ Blocked instances
 
 ### No longer exists
 
-| instance     | former status | description | date | 
-| :--          | :--           | :--         | :--  |
-| ediot.social | silenced      | Encyclopedia Dramatica. Apparent free speech zone &#9313; | &mdash; | 
-| gs.smuglo.li | suspended     | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | &mdash; |
-| antitwitter.moe | silenced | Advice of octodon.social admin &#9315; | &mdash; | 
+| instance        | former status | description | date | 
+| :--             | :--           | :--         | :--  |
+| ediot.social    | silenced      | Encyclopedia Dramatica. Apparent free speech zone &#9313; | &mdash; | 
+| gs.smuglo.li    | suspended     | Advice of toot.cat admin, GNUSocial apparent free speech zone &#9313;, lolicon&#9314; | &mdash; |
+| pl.smuglo.li    | suspended     | Pleroma version of gs. &#9313;, lolicon&#9314; | 2018-04-06 |
+| antitwitter.moe | silenced      | Advice of octodon.social admin &#9315; | &mdash; | 
 
 
 <!--
@@ -80,6 +90,8 @@ Notes on our instance
 References
 ----
 
+May be used for reference, but not all are applied.
+
 - https://toot.cat/users/polymerwitch/updates/556
 - https://toot.cafe/@nolan/2937
 - https://cybre.space/users/chr/updates/2616
@@ -89,3 +101,5 @@ References
 - https://toot.cat/users/polymerwitch/updates/21545
 - [Toot.cafe's blocked instances](https://github.com/tootcafe/blocked-instances)
 - [Dzuk's Blocklist Advisory](http://telegra.ph/Instances-to-silencesuspend-on-Mastodon-06-23) (depreciated)
+- https://flipping.rocks/about/more#unavailable-content
+- https://wiki.tenforward.social/doku.php?id=tenforward:suspensions
