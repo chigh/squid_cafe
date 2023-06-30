@@ -1,8 +1,10 @@
 PATH="/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/home/mastodon/.rbenv/shims/"
 RAILS_ENV=production
 NUM_DAYS=5
+15 0,12 * * *    mastodon    (echo "____________________________" >> /var/log/mastodon/purge-media.log; date >>/var/log/mastodon/purge-media.log 2>&1 ; /home/mastodon/scripts/purge-media.sh  >>/var/log/purge-media.log 2>&1)
 #
 # Clean up
 #   https://docs.joinmastodon.org/admin/setup/
-0 6 * * *  mastodon (echo "____________________________" >> /var/log/mastodon.log; date >>/var/log/mastodon.log 2>&1 ; cd /home/mastodon/live && bin/tootctl media remove >>/var/log/mastodon.log 2>&1)
-0 12 * * 7 mastodon (echo "____________________________" >> /var/log/mastodon.log; date >>/var/log/mastodon.log 2>&1 ; cd /home/mastodon/live && bin/tootctl preview_cards remove >>/var/log/mastodon.log 2>&1)
+#0 6 * * *  mastodon (echo "____________________________" >> /var/log/mastodon/mastodon.log; date >>/var/log/mastodon/mastodon.log 2>&1 ; cd /home/mastodon/live && bin/tootctl media remove >>/var/log/mastodon/mastodon.log 2>&1)
+#0 3 * * *  mastodon (echo "____________________________" >> /var/log/mastodon/mastodon.log; date >>/var/log/mastodon/mastodon.log 2>&1 ; cd /home/mastodon/live && bin/tootctl media remove-orphans >>/var/log/mastodon/mastodon.log 2>&1)
+#0 12 * * 7 mastodon (echo "____________________________" >> /var/log/mastodon/mastodon.log; date >>/var/log/mastodon/mastodon.log 2>&1 ; cd /home/mastodon/live && bin/tootctl preview_cards remove >>/var/log/mastodon/mastodon.log 2>&1)
