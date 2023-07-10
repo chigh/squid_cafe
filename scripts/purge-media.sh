@@ -4,6 +4,9 @@
 export RAILS_ENV=production
 DAYS=4
 
+# Clear the cache
+/home/mastodon/live/bin/tootctl cache clear
+
 # Prune remote accounts that never interacted with a local user
 /home/mastodon/live/bin/tootctl accounts prune;
 

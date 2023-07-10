@@ -65,6 +65,7 @@ function _db_maint() {
 }
 
 function _quick_restart() {
+    printf "Restarting Mastodon services...\n"
     systemctl restart mastodon-sidekiq
     systemctl reload mastodon-web
     systemctl restart mastodon-streaming

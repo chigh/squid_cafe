@@ -24,28 +24,31 @@ git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 printf "Press <enter> to update Ruby and node.js dependencies...\n"
 _pause
 
-cd ~/.rbenv/plugins/ruby-build && git pull && cd -
-rbenv install x.x.x
-rbenv global x.x.x
-
-cd ~/live
-gem install bundler
-
-cd ~/live
-bundle install --deployment --without development test
-bundle install -j$(getconf _NPROCESSORS_ONLN) --deployment --without development test
-
-cd ~/live
-curl --compressed -o- -L https://yarnpkg.com/install.sh | bash # Upgrade yarn
-yarn install --pure-lockfile
+#cd ~/.rbenv/plugins/ruby-build && git pull && cd -
+#rbenv install x.x.x
+#rbenv global x.x.x
+#
+#cd ~/live
+#gem install bundler
+#
+#cd ~/live
+#bundle install --deployment --without development test
+#bundle install -j$(getconf _NPROCESSORS_ONLN) --deployment --without development test
+#
+#cd ~/live
+#curl --compressed -o- -L https://yarnpkg.com/install.sh | bash # Upgrade yarn
+#yarn install --pure-lockfile
+bundle install
+yarn install
 
 ###########################################################################
 printf "Press <enter> to update the database schema...\n"
 _pause
 
 cd ~/live
-#RAILS_ENV=production bundle exec rails db:migrate
-SKIP_POST_DEPLOYMENT_MIGRATIONS=true RAILS_ENV=production bundle exec rails db:migrate
+1. RAILS_ENV=production bundle exec rails db:migrate
+or
+2. SKIP_POST_DEPLOYMENT_MIGRATIONS=true RAILS_ENV=production bundle exec rails db:migrate
 
 ###########################################################################
 printf "Press <enter> to precomile assets...\n"

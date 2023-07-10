@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+set -o xtrace
+
 DATE=$(date +%Y%m%d)
 TIME=$(date +%s)
-BACKUP_HOME=${HOME}/backups
+BACKUP_HOME=/home/backup/data/db
 BACKUP_DIR=$BACKUP_HOME/$DATE
 DB_BACKUP=mastodon_production.sql
 
@@ -24,13 +26,15 @@ if [[ ! -d $BACKUP_DIR ]]
 then
 	#printf "Creating backup directory..."
 	mkdir -p $BACKUP_DIR 
+    chown mastodon:mastodon $BACKUP_DIR
         #&& success || fail
 fi
 
 _backup_db() {
 #printf "Backing up database..." 
-    su - mastodon -c "pg_dump mastodon_production > ${DB_BACKUP}" && \
-	    mv /home/mastodon/${DB_BACKUP} ${BACKUP_DIR} 
+    #su - mastodon -c "pg_dump mastodon_production > ${BACKUP_DIR}/${DB_BACKUP}" # && \
+    runuser -l mastodon -c "cd ~ && pg_dump -Fc mastodon_production -f ${BACKUP_DIR}/${DB_BACKUP}"
+	    #mv /home/mastodon/${DB_BACKUP} ${BACKUP_DIR} 
         #&& success || fail
 }
 
@@ -42,14 +46,18 @@ _backup_conf() {
 
 _backup_env() {
 #printf "Backing up environment..."
-    cp /home/mastodon/live/.env.production $BACKUP_DIR #&& success || fail
-    cp /home/mastodon/.bash_[af]* $BACKUP_DIR
-    cp -pr ${HOME}/scripts $BACKUP_DIR
+    rsync -aic /home/mastodon/live/.env.production $BACKUP_DIR #&& success || fail
+    rsync -aic /home/mastodon/.bash_[af]* $BACKUP_DIR
+    rsync -aic ${HOME}/scripts $BACKUP_DIR
+}
+
+_backup_redis() {
+    rsync -aic /var/lib/redis/dump.rdb $BACKUP_DIR
 }
 
 _create_archive() {
-chown -Rh root:root ${BACKUP_DIR}
-find $BACKUP_DIR -type f -exec chmod 660 '{}' \;
+    chown -Rh root:root ${BACKUP_DIR}
+    find $BACKUP_DIR -type f -exec chmod 660 '{}' \;
 
 #printf "Archiving backup..."
     ( cd $BACKUP_DIR ; tar cf mastodon-assets-${DATE}.tar /home/mastodon/live/public/system )
@@ -67,14 +75,14 @@ _encrypt() {
             gpg --batch --yes -e -o $file.gpg -r chigh@keybase.io $file
             rm -f $file
         fi
-        if [[ -e ${file}.gpg ]]; then
-            cp ${file}.gpg /backups && rm ${file}.gpg
-        fi
+        #if [[ -e ${file}.gpg ]]; then
+        #    cp ${file}.gpg /backups && rm ${file}.gpg
+        #fi
     done
 }
 
 _purge() {
-    cd /backups
+    cd $BACKUP_HOME
     ls -1pr | grep -v '/$' | tail -n +8 | tr '\n' '\0' | xargs -0 rm --
     # (ls -t|head -n 5;ls)|sort|uniq -u|xargs rm
     # (ls -t|head -n 5;ls)|sort|uniq -u|sed -e 's,.*,"&",g'|xargs rm
@@ -83,17 +91,21 @@ _everything() {
     _backup_db
     _backup_conf
     _backup_env
+    _backup_redis
     _create_archive
     _clean_up
     _encrypt
 }
 case ${1:-} in 
+   -d) _backup_db ;;
    --encrypt|-e) _clean_up; _encrypt ; _purge ;; 
     -p) _clean_up; _purge ;;
     -a) _everything ;;
      *) _backup_db; 
         _backup_conf; 
         _backup_env;
+        _backup_redis;
         _create_archive;
+        _encrypt;
         _clean_up;;
 esac

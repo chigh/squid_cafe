@@ -18,6 +18,7 @@
 
 ### fields in bio set to 5 instead of 4 app/models/account.rb ~ +95
 # validates :fields, length: { maximum: 5 }, if: -> { local? && will_save_change_to_fields? }
+#DEFAULT_FIELDS_SIZE = 5
 
 
 ### Dragon emoji
