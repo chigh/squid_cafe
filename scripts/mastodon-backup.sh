@@ -31,21 +31,21 @@ then
 fi
 
 _backup_db() {
-#printf "Backing up database..." 
+    printf "Backing up database..." 
     #su - mastodon -c "pg_dump mastodon_production > ${BACKUP_DIR}/${DB_BACKUP}" # && \
-    runuser -l mastodon -c "cd ~ && pg_dump -Fc mastodon_production -f ${BACKUP_DIR}/${DB_BACKUP}"
+    runuser -l mastodon -c "cd ~ && pg_dump -Fc mastodon_production -f ${BACKUP_DIR}/${DB_BACKUP}" \
+        && success || fail
 	    #mv /home/mastodon/${DB_BACKUP} ${BACKUP_DIR} 
-        #&& success || fail
 }
 
 _backup_conf() {
-#printf "Backing up configuration..."
+    printf "Backing up configuration..."
     cp /home/mastodon/live/config/settings.yml ${BACKUP_DIR} 
         #&& success || fail
 }
 
 _backup_env() {
-#printf "Backing up environment..."
+    printf "Backing up environment..."
     rsync -aic /home/mastodon/live/.env.production $BACKUP_DIR #&& success || fail
     rsync -aic /home/mastodon/.bash_[af]* $BACKUP_DIR
     rsync -aic ${HOME}/scripts $BACKUP_DIR

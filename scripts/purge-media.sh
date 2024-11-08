@@ -2,7 +2,7 @@
 # https://docs.joinmastodon.org/admin/tootctl
 
 export RAILS_ENV=production
-DAYS=4
+DAYS=5
 
 # Clear the cache
 /home/mastodon/live/bin/tootctl cache clear
@@ -11,7 +11,7 @@ DAYS=4
 /home/mastodon/live/bin/tootctl accounts prune;
 
 # Remove remote statuses that local users never interacted with older than $DAYS days
-/home/mastodon/live/bin/tootctl statuses remove --days ${DAYS};
+/home/mastodon/live/bin/tootctl statuses remove --days 14;
 
 # Remove media attachments older than $DAYS days
 /home/mastodon/live/bin/tootctl media remove --days ${DAYS};
